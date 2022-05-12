@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>My Arch Linux Install</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="../mainstyle.css">
+	</head>
+
+	<body>
+
+		<h1 class="pagetitle">How I Install Arch Linux</h1>
+
+		<ul class="navbar">
+			<a class="navbar" href="../index.html" ><li class="navbar"><img class="navbar" src="../icons/home.png" width=24px height=24px> Home</li></a>
+			<a class="navbar" href="../academic/academic.html"><li class="navbar"><img class="navbar" src="../icons/academic.svg" width=24px height=24px> Academic</li></a>
+			<a class="navbar" href="../opinions/opinions.html"><li class="navbar"><img class="navbar" src="../icons/opinions.png" width=24px height=24px> Opinions</li></a>
+			<a class="navbar" href="../projects/projects.html"><li class="navbar"><img class="navbar" src="../icons/projects.png" width=24px height=24px> Projects</li></a>
+		</ul>
+
+		<h1>Arch Linux Installation</h1>
+
+		<p>Arch Linux is a distribution of GNU/Linux which is very minimal. It takes effort to both install it and configure it. This can take time, but allows you to more easily configure your system to be exactly how you want it to be. This set of instructions here will take you quickly through the entire process. Note that this is more of a quick reference than a guided tour. I would recommend other sources if you truly want to understand <i>why</i> each command is necessary/desirable.</p>
+		
+		<h2>The Absolute Basics</h2>
+
+		<p>This section gets you to the bare minimum: Arch Linux in its default form without any bells or whistles. By the end of this section, you should have a black screen with a command prompt.</p>
+
+		<ol>
+			<li>First, create a USB drive which contains a bootable copy of Arch Linux. Best to go to the <a href="https://archlinux.org/download/" target="blank_">Arch Linux Website</a> to get a copy of the ISO file.</a></li>
+			<li>Put the ISO on your USB. If you are running Windows or MacOS, I would encourage you to use <a href="https://getfedora.org/en/workstation/download/" target="blank_">Fedora's Media Writer</a> to configure your USB device with the ISO. On any version of GNU/Linux, dd is your best bet. <c>dd if=(ISO LOCATION) of=/dev/(USB DRIVE) status="progress"</c></li>
+			<li>Boot the machine from the USB, usually by pressing <h>F2</h> or <h>F11</h> or <h>F12</h> as the machine boots and choosing the Arch Linux USB.</li>
+			<li>Check for UEFI. If the output of <c>ls /sys/firmware/efi/efivars</c> is <c>ls: cannot access '/sys/firmware/efi/efivars': No such file or directory</c> then you can proceed to install Arch in this way. Otherwise, you need to install Arch Linux for UEFI systems. Search for that and you'll find a guide that can help you.</li>
+			<li>Make sure you have an internet connection.
+				<c>ping nolanmcmahon.net<br>64 bytes from nolanmcmahon.net ...</c>
+				With an Ethernet cord, you should be connected automatically, otherwise you will need to connect with WIFI.</li>
+			<li>If you want to connect with WIFI, first enter the iwd command line interface with <h>iwctl</h>. List your WIFI hardware with <h>device list</h>. Make sure that the device that you want to connect with is not disabled/turned off (with a hardware switch on the keyboard/chassis). Note the name of your device. Connect to your WIFI network with: <c>station (name of your device) connect (name of your wifi network)</c>Enter your WIFI password and then type <h>exit</h> to return to the regular command prompt. Double check that you are connected to the internet with the above <h>ping</h> command.</li>
+			<li>Run: <c>timedatectl set-ntp true</c></li>
+			<li>Use: <h>lsblk</h> to find the name of the drive on which you want to install Arch.</li>
+			<li>Start partitioning your drive with <c>fdisk /dev/(name)</c></li>
+			<li>List partitions with <h>p</h>.</li>
+			<li>Delete all partitions with <h>d</h>.</li>
+			<li>Create a boot partition with <h>n</h> (Make Primary if Prompted, Partition Number Default, First Sector Default, Last Sector +200M, Clear Signature if Prompted).</li>
+			<li>Create swap partition with <h>n</h> (Make Primary if Prompted, Partition Number Default, First Sector Default, Last Sector +(150% RAM), Clear Signature if Prompted).</li>
+			<li>Create a root partition with <h>n</h> (Make Primary if Prompted, Partition Number Default, First Sector Default, Last Sector +25G (absolutely no less than 15), Clear Signature if Prompted).</li>
+			<li>Create a home partition with <h>n</h> (Make Primary if Prompted, Partition Number Default, First Sector Default, Last Sector Default, Clear Signature if Prompted).</li>
+			<li>Write changes with <h>w</h>.</li>
+			<li>Make file systems on boot, root, and home with: <c>mkfs.ext4 /dev/(name)1<br>mkfs.ext4 /dev/(name)3<br>mkfs.ext4 /dev/(name)4</c></li>
+			<li>Make swap partition with: <c>mkswap /dev/(name)2</c></li>
+			<li>Turn on swap with: <c>swapon /dev/(name)2</c></li>
+			<li>Mount the root partition with: <c>mount /dev/(name)3 /mnt</c></li>
+			<li>Make folders upon which to mount the remaining partitions with: <c>mkdir /mnt/home /mnt/boot</c></li>
+			<li>Mount the boot and home partitions with: <c>mount /dev/(name)1 /mnt/boot</c> and <c>mount /dev/(name)4 /mnt/home</c></li>
+			<li>Install Arch Linux with: <c>pacstrap /mnt base base-devel linux linux-firmware vim</c></li>
+			<li>Make an fstab file with: <c>genfstab -U /mnt &gt;&gt; /mnt/etc/fstab</c> Correct the file if necessary.</li>
+			<li>Move to the drive with: <c>arch-chroot /mnt</c></li>
+			<li>Install Network Manager with: <c>pacman -S networkmanager</c></li>
+			<li>Enable the Network Manager on startup with SystemD with: <c>systemctl enable NetworkManager</c></li>
+			<li>Install the boot loader with: <c>pacman -S grub</c></li>
+			<li>Install grub with: <c>grub-install --target=i386-pc /dev/(name)</c>(often times <h>--force</h> is required to get grub to install properly)</li>
+			<li>Configure grub with: <c>grub-mkconfig -o /boot/grub/grub.cfg</c></li>
+			<li>Make a root password with <h>passwd</h>.</li>
+			<li>Configure languages using: <c>vim /etc/locale.gen</c> and uncommenting the lines relevant to you (ie: <h>en_CA</h>/<h>en_US</h>; there should be two lines per language)</li>
+			<li>Run: <c>locale-gen</c></li>
+			<li>Set the lang variable with: <c>vim /etc/locale.conf</c> and add the line <c>LANG=en-CA.UTF-8</c> or <c>LANG=en-US.UTF-8</c></li>
+			<li>Set your timezone. Look for time zones with: <c>ls /usr/share/zoneinfo/</c> and working your way down. Link with: <c>ln -sf /usr/share/zoneinfo/(YOUR TIME ZONE) /etc/localtime</c></li>
+			<li>Give your machine a host name with <c>vim /etc/hostname</c>Add one word at the top of the file with the name you wish to give your machine.</li>
+			<li>If you want to use WIFI, install <h>iwd</h> with: <c>pacman -S iwd</c></li>
+			<li>Run <h>exit</h>. Then unmount the drives with: <c>umount -R /mnt</c> You can now safely reboot with <h>reboot<h>.</li>
+			<li>Remove the USB drive from the system after it shuts off; it should boot from your internal hard drive.</li>
+		</ol>
+
+		<h2>Making Arch Usable</h2>
+
+		<p>Now, if you did everything correctly, you should have a command prompt on a black screen. Next lets start to add features to the system to allow you to actually use it.</p>
+
+		<ol>
+			<li>Login with the username root and the password you set before.</li>
+			<li>If you are using WIFI, we need to set it up to connect. First enable the services that WIFI needs:<c>systemctl enable --now systemd-networkd systemd-resolved iwd</c>Then the config for the wireless connection needs to be edited. To the new file <h>/etc/systemd/network/20-wireless.network</h> add the following lines:<c>[Match]<br>Name=wlan0<br><br>[Network]<br>DHCP=yes</c>Now run: <c>systemctl restart systemd-networkd</c>Lastly, enter the iwd command prompt with <h>iwctl</h> and connect to the WIFI network using <h>station (name of your device) connect (name of your wifi network)</h> and type <h>exit</h> to return to the regular prompt. Check to make sure that you are connected to the internet with the <h>ping</h> command.</li>
+			<li>Add a user account with: <c>useradd -m -g wheel (username)</c> and give them a password with: <c>passwd (username)</c></li>
+			<li>Run: <c>sudo vim /etc/sudoers</c> and uncomment the line: <c>%wheel ALL=(ALL) NOPASSWD: ALL</c> which is near the bottom of the file.</li>
+			<li>Install basic fonts with: <c>pacman -S noto-fonts</c></li>
+			<li>Many programs (like st) will need to know what fonts are available. They need fontconfig. <c>pacman -S fontconfig</c></li>
+			<li>Install git with: <c>pacman -S git</c></li>
+			<li>Make a directory for all of the configs you will need for your system. In <h>/home/(username)</h> run: <c>mkdir .config</c></li>
+			<li>Make a directory for all of the software that you will first git clone, then make install. I like <h>~/software/</h>. To do that: <c>mkdir software</c>in <h>~/</h>.</li>
+			<li>It's strictly optional, but I like to make pacman a bit more fun, so I add <h>ILoveCandy</h> and uncomment <h>Color</h> in <h>/etc/pacman.conf</h>.</li>
+			<li>Being able to read the manual is essential. To allow this, install man-db. <c>pacman -S man-db</c></li>
+			<li>Create a directory for scripts you'll use. I like <h>~/scripts/</h>. <c>mkdir scripts</c></li>
+			<li>I want the scripts in this folder to be a part of my system path. To do this add: <c>export $PATH:$HOME/scripts</c> to <h>.bashrc</h>.</li>
+			<li>I like to create the "traditional" directories for all of my personal files, in particular <c>mkdir Documents Downloads Pictures Music Videos</c></li>
+			<li>To solve an issue where pacman can't grab PGP keys when downloading software, install:<c>pacman -S archlinux-keyring</c></li>
+		</ol>
+
+		<h3>AUR Helper - yay</h3>
+
+		<p>It's likely that not all of the software that you'll want will be available in the official Arch Linux repositories. This is where the Arch User Repository (AUR) comes in! To make it easier to use it, I use Yet Another Yogurt (YAY) to download, install, and manage software from the AUR.</p>
+
+		<ol>
+			<li>I use <h>yay</h> as my AUR helper. In <h>~/software/</h> clone the <h>yay</h> repository: <c>git clone https://aur.archlinux.org/yay.git</c></li>
+			<li>Move into <h>yay</h> repository and execute: <c>makepkg -sri</c></li>
+		</ol>
+
+		<h3>X Org Server</h3>
+
+		<p>The next step is setting up a graphical interface. There are two main options: X and Wayland. I prefer X.</p>
+
+		<ol>
+			<li>To get a graphical environment you need X. Run: <c>pacman -S xorg-server</c></li>
+			<li>You need an initialization file for X. I like xinit so create <h>~/.xinitrc</h> and install: <c>pacman -S xorg-xinit</c></li>
+			<li>You need to make sure that you have the correct drivers for your graphics card. Run this command to find the name of the graphics card you have: <c>lspci -v | grep -A1 -e VGA -e 3D</c></li>
+			<li>Then install the appropriate driver from the list on the <a href="https://wiki.archlinux.org/title/Xorg#Driver_installation" target="blank_">Arch Wiki</a>. Warning! For multiple monitor set-ups with nVidia cards, the open source driver hasn't worked well for me. It would not allow me to permute my monitors without revealing some nasty bugs. In which case, I recommend the proprietary video drivers from nVidia: <c>pacman -S nvidia nvidia-utils nvidia-settings</c></li>
+			<li>To get information about your X server, you'll want xdpyinfo. <c>pacman -S xorg-xdpyinfo</c></li>
+			<li>For multiple monitors, you'll want xrandr. <c>pacman -S xorg-xrandr</c></li>
+			<li>To configure multiple monitors, first find their names with <h>xrandr -q</h>. They should be something like HDMI-1, DP-1 DVI-D-1, LVDS, VGA-1, etc.</li>
+			<li>You can arrange your monitors in many different ways, but I prefer to keep it simple. Modify this line to match what you configuration is: <c>xrandr --output DP-1 --primary --auto --output DVI-D-1 --auto --left-of DP-1 --output HDMI-1 --auto --right-of DP-1</c>Alternatively, this can be changed in <h>nvidia-settings</h> if you are using the nVidia video driver.</li>
+			<li>For transparency support, install xcompmgr using: <c>pacman -S xcompmgr</c></li>
+			<li>xcompmgr needs to be started for transparency to work. Add: <c>xcompmgr -c &amp;</c> to <h>.xinitrc</h>.</li>
+			<li>For wallpaper configuration, I use xwallpaper. Install using: <c>pacman -S xwallpaper</c></li>
+			<li>Once I have a wallpaper that I like, I want it to be persistent. To do this, add: <c>xwallpaper --zoom Pictures/wall.jpg</c> to <h>.xinitrc</h>. This will make the file <h>~/Pictures/wall.jpg</h> your wallpaper each time you login.</li>
+			<li>I don't like my screen blanking after a period of inactivity. To prevent that add the following three lines to <h>.xinitrc</h>:<c>xset s off # Don't Activate Screensaver<br>xset -dpms # Disable DPMS (Energy Star) Features<br>xset s noblank # Don't Blank the Video Device</c></li>
+			<li>I want X to start automatically after logging in without having to provide <h>startx</h>. To do this, add: <c>if [[ "$(tty)" = "/dev/tty1" ]]; then<br>  startx<br>fi</c>to your <h>.bashrc</h>.</li>
+			<li>I want to be able to automatically change my cursor on the desktop to the familiar pointer instead of the default X, to do this I need: <h>xsetroot</h>: <c>pacman -S xorg-xsetroot</c>The change itself is made in the Window Manager section below.</li>
+			<li>I like to have a consistent appearance across my system (of mostly terminal-based programs). To do this, I use Xresources. <c>pacman -S xorg-xrdb</c></li>
+			<li>Add your configurations to <h>~/.Xresources</h>. See my dotfiles for how I configure Xresources.</li>
+			<li>The font I'm currently using in my Xresources config is Iosevka: <c>yay -S ttf-iosevka</c></li>
+			<li>Load the <h>~/.Xresources</h> file in <h>.xinitrc</h> by adding the line: <c>[[ -f ~/.Xresources ]] &amp;&amp; xrdb -merge -I$HOME ~/.Xresources</c>to your <h>.xinitrc</h>.</li>
+		</ol>
+
+		<h3>Keyboard Configuration Script</h3>
+
+		<p>The keyboard has a glaring problem: <h>Caps Lock</h> is a <b>USELESS</b> key in a <b>GREAT</b> location. I use <h>Esc</h> and <h>SUPER</h> all the time, so it makes sense to remap <h>Caps Lock</h> to both of those keys. This section will configure <h>Caps Lock</h> to act like <h>Esc</h> if it is pressed in isolation, but act like <h>SUPER</h> if pressed in combination with any other key! The script also makes all key presses register in quicker succession if a key is held down.</p>
+
+		<ol>
+			<li>Copy from my dotfiles the script called <h>remap</h> into <h>scripts</h>.</li>
+			<li>The script depends on xdotool and xcape. Install them: <c>pacman -S xcape xdotool</c></li>
+			<li>Add <h>~/scripts/remap</h> to <h>.xinitrc</h>.</li>
+		</ol>
+		
+		<h3>Window Manager - BSPWM/SXHKD</h3>
+
+		<p>Interacting with programs in a graphical environment requires some form of window manager. I vastly prefer a tiling window manager to a floating one, so I'm using BSPWM. This section will install and configure BSPWM and setup shortcuts for interacting with the windows that it creates.</p>
+
+		<ol>
+			<li>Install the window manager BSPWM with: <c>pacman -S bspwm</c> and a hotkey tool (highly recommended by BSPWM): <c>pacman -S sxhkd</c></li>
+			<li>In <h>~/.config/</h>: <c>mkdir bspwm</c></li>
+			<li>Copy the default BSPWM config using: <c>cp /usr/share/doc/bspwm/examples/bspwmrc ~/.config/bspwm/bspwmrc</c></li>
+			<li>If you have multiple monitors, set the workspaces you want on each one with something like: <c>bspc monitor (monitor name from xrandr -q) -d VII VIII IX</c></li>
+			<li>In <h>~/.config/</h>: <c>mkdir sxhkd</c></li>
+			<li>Copy the default SXHKD config using: <c>cp /usr/share/doc/bspwm/examples/sxhkdrc ~/.config/sxhkd/sxhkdrc</c></li>
+			<li>Configure your <h>bspwmrc</h> and <h>sxhkdrc</h> files as desired. My configs are available in my dotfiles.</li>
+			<li>To <h>bspwmrc</h> I like to add:<c>xsetroot -cursor_name left_ptr<br>bspc config focused_border_color \#fcc200<br>bspc config normal_border_color  \#000000<br>bspc config focus_follows_pointer true<br>bspc config pointer_follows_focus true</li>
+			<li>Add <h>exec bspwm</h> to the very bottom of your <h>.xinitrc</h></li>
+		</ol>
+
+		<h3>Status Bar - polybar</h3>
+
+		<p>BSPWM <i>only</i> manages windows; it does not come with its own status bar. You have to add that yourself. Polybar is the program that I've gone with for creating status bars.</p>
+
+		<ol>
+			<li>I like to use <h>polybar</h> as my status bar of choice. <h>polybar</h> is an AUR package so it is installed with: <c>yay -S polybar</c></li>
+			<li>Look to my dotfiles for how I configure my <h>polybar</h>. Set the config in <h>~/.config/polybar/config</h>.</li>
+			<li>Fonts are a big issue with Polybar. You'll need several: xorg-fonts-misc <c>pacman -S xorg-fonts-misc</c>Unifont <c>pacman -S bdf-unifont</c>Siji <c>yay -S siji-git</c>Symbola <c>yay -S ttf-symbola-free</c></li>
+			<li>If you configure it to use a unicode character that is not available in the fonts that are loaded by polybar, you can search for fonts that have the unicode character that you need at <a href="fileformat.info">fileformat.info</a></li>
+			<li>If for some reason fonts break, check to see if running <h>fc-list</h> as root lists all necessary fonts. If it does, copy the directory of locked fonts into the same fonts folder with a different name. Problem "solved".</li>
+		</ol>
+
+		<h3>Bluetooth - bluez</h3>
+
+		<p>Bluetooth is pretty handy if you want to connect a mouse, keyboard, or other input device. Here's how I set it up.</li>
+
+		<ol>
+			<li>To enable bluetooth, you first must have hardware which permits it, then install bluez and bluez-utils. <c>pacman -S bluez bluez-utils</c></li>
+			<li>To connect a bluetooth device (NOT AN AUDIO DEVICE - see Arch wiki for additional steps to use Audio bluetooth) run: <c>bluetoothctl<br>power on<br>scan on<br>agent on<br>pair MAC-ADDRESS (choose a MAC address from tab select at random if you don't know which one is your device's address)<br>connect MAC-ADDRESS</c></li>
+			<li>If you want the bluetooth connection to be made automatically at startup, you have to automatically power on the bluetooth device by changing <h>/etc/bluetooth/main.conf</h> to have <h>AutoEnable=true<h> under the <h>[Policy]</h> section.</li>
+		</ol>
+
+		<h3>Application Launcher - DMenu</h3>
+
+		<p>What good are programs if you can't launch them? I've chosen dmenu to be my program launcher.</p>
+
+		<ol>
+			<li>To launch applications, I prefer <h>dmenu</h> because it is minimal. Install with: <c>pacman -S dmenu</c></li>
+		</ol>
+
+		<h3>Terminal Emulator - st</h3>
+
+		<p>No GNU/Linux system is complete without a terminal! I use the simple/suckless terminal from <a href="https://suckless.org" target="blank_">suckless.org</a> with several patches.</p>
+		<ol>
+			<li>st requires <h>libxft</h>. Install using: <c>pacman -S libxft</c></li>
+			<li>Clone the st repository from <a href="https://st.suckless.org" target="blank_">suckless.org</a>. In your <h>~/software/</h> directory run: <c>git clone https://git.suckless.org/st</c></li>
+			<li>Next download the patches that you want to apply to st. I like to keep them in the directory for the st itself so inside of <h>~/software/st</h>: <c>mkdir patches</c></li>
+			<li>I like having support for transparency in my terminal so I use the Alpha patch. Inside </h>~/software/st/patches</h> run: <c>curl -s http://st.suckless.org/patches/alpha/st-alpha-0.8.2.diff &gt; alpha.diff</c>to get Alpha version 0.8.2.</li>
+			<li>I like being able to scroll back in the terminal, so I use scrollback. Inside <h>~/software/st/patches</h> run: <c>curl -s http://st.suckless.org/patches/scrollback/st-scrollback-20210507-4536f46.diff &gt; scrollback.diff</c>to get a recent version of scrollback.</li>
+			<li>I also like being able to scrollback with the mouse, not just the keyboard. Inside of <h>~/software/st/patches</h> run: <c>curl -s http://st.suckless.org/patches/scrollback/st-scrollback-mouse-20191024-a2c479c.diff &gt; scrollback_mouse.diff</c></li>
+			<li>I want st to respond to the configs that I set in <h>.Xresources</h>. Inside of <h>~/software/st/patches</h> run: <c>curl -s http://st.suckless.org/patches/xresources/st-xresources-20200604-9ba7ecf.diff &gt; xresources.diff</c></li>
+			<li>Apply all your desired patches by running: <c>patch -i patches/(patch_name)</c>in the <h>~/software/st</h> directory. (One patch call per patch)</li>
+			<li>Now you want to configure st (including the patches you applied). In <h>~/software/st</h> run: <c>make config.h</c>Edit <h>config.h</h> to your heart's content.</li>
+			<li>In particular, I like to be able to scroll in st with <h>Alt+[jkud]</h> like in Vim, so I add the following lines into the <h>static Shortcut shortcuts[]</h> variable:<c>{ MODKEY,	XK_j,	kscrolldown,	{.i =  1} },<br>{ MODKEY,	XK_k,	kscrollup,	{.i =  1} },<br>{ MODKEY,	XK_u,	kscrollup,	{.i = -1} },<br>{ MODKEY,	XK_d,	kscrolldown,	{.i = -1} },</c></li>
+			<li>When you are ready to install it: <c>sudo make install</c></li>
+			<li>I want st to be my default terminal. To do this add: <c>export TERMINAL="st"</c>to <h>.bashrc</h>.</li>
+		</ol>
+
+		<h3>Web Browser - qutebrowser</h3>
+
+		<p>A web browser is absolutely essential. I use <a href="https://qutebrowser.org/" target="blank_">qutebrowser</a>. It is a very simple, configurable browser with Vim shortcuts built in.</p>
+
+		<ol>
+			<li>My web browser of choice is <h>qutebrowser</h>. To install it: <c>pacman -S qutebrowser</c></li>
+			<li>Type <h>:open qute://settings/</h> to go to the settings page for <h>qutebrowser</h>:<c>Set tabs.last_close to close<br>Set completion.cmd_history_max_items to 0<br>Set completion.web_history_max_items to 0</c></li>
+			<li>I want qutebrowser to be my default web browser. To do this add: <c>export BROWSER="qutebrowser"</c> to <h>.bashrc</h>.</li>
+		</ol>
+
+		<h3>Text Editor - Neovim</h3>
+
+		<p>Vim, but with fewer lines of source code! It's my IDE of choice.</p>
+
+		<ol>
+			<li>My text editor and development environment of choice is Neovim. Install using: <c>pacman -S neovim</c></li>
+			<li>Create the directory <h>~/.config/nvim/</h>.</li>
+			<li>Create an init file in <h>~/.config/nvim/</h> with: <c>touch init.vim</c>in that directory.</li>
+			<li>Download vim plug, to be the plugin manager for Neovim with: <c>curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim</c></li>
+			<li>Make a new directory for the plugins with: <c>mkdir: ~/.config/nvim/vim-plug</c></li>
+			<li>Create a file in the vim-plug directory to pull the plugins that are desired. See my dotfiles for how I structure this file.</li>
+			<li>Source the plugins file in the <h>init.vim</h> file. For details on how I do this, take a look at my <h>init.vim</h> dotfile.</li>
+			<li>Install the given plugins by opening up Neovim and running <h>:PlugStatus</h> and then <h>:PlugInstall</h>. See <a href="https://www.chrisatmachine.com/Neovim/01-vim-plug/">this article</a> for more details.</li>
+			<li>Lastly, I want Neovim to be my default text editor on the system. To do that add: <c>export EDITOR='nvim'</c> to <h>.bashrc</h>.</li>
+		</ol>
+
+		<h3>Mail Client - Neomutt</h3>
+
+		<p>All your emails from all your accounts in one place, locally stored on your own computer and accessible from a command line interface. What more could you ask for?</li>
+
+		<ol>
+			<li>I use mutt-wizard to configure <h>neomutt</h> with <h>isync</h>. This allows me to have all of my mail offline. First install required dependencies: <c>pacman -S isync neomutt msmtp pass</c></li>
+			<li>mutt-wizard has a number of optional dependencies. If you want to be able to view HTML in neomutt, install lynx: <c>pacman -S lynx</c></li>
+			<li>If you want to index your mail, install notmuch. <c>pacman -S notmuch</c></li>
+			<li>If you want to have urls in email output to your browser, you'll need urlview: <c>yay -S urlview</c></li>
+			<li>If you want an address book to suggest email address completion, you'll need abook: <c>yay -S abook-configdir</c></li>
+			<li>Now, to install mutt-wizard:<c>git clone https://github.com/LukeSmithxyz/mutt-wizard<br>cd mutt-wizard<br>sudo make install</c></li>
+			<li>Make a gpg key pair with: <c>gpg --full-generate-key</c></li>
+			<li>Initialize pass with: <c>pass init (your gpg email)</c></li>
+			<li>Now add accounts using: <c>mw -a (your email address)</c></li>
+			<li>Sync mail with: <c>mw -y (your email address)</c></li>
+			<li>Mail can now be viewed by running <h>neomutt</h>.</li>
+		</ol>
+
+		<h3>File Viewer - ranger</h3>
+
+		<p>Ranger is my terminal-based file viewer of choice. It's simple and it works well.</p>
+
+		<ol>
+			<li>I like the command line file viewer: <h>ranger</h>. To install: <c>pacman -S ranger</c></li>
+			<li>To configure <h>ranger</h>, run: <c>ranger --copy-config=all</c>This moves all the config files into <h>~/.config/ranger</c>.</li>
+			<li>In <h>rc.conf</h>, add: <c>RANGER_LOAD_DEFAULT_RC FALSE<br>set show_hidden true</c></li>
+		</ol>
+
+		<h3>Music Player - ncmpcpp/mpd</h3>
+
+		<p>Music from the terminal! NCMPCPP also has a visualizer mode which introduces another way to groove to your tunes.</p>
+
+		<ol>
+			<li>I use Pulse Audio as an audio server. To install: <c>pacman -S pulseaudio</c></li>
+			<li>I control Pulse Audio with <h>pamixer</h>. To install: <c>pacman -S pamixer</c></li>
+			<li>I like to use the <h>mpd</h> with <h>ncmpcpp</h> as a front end. To install: <c>pacman -S mpd ncmpcpp</c></li>
+			<li>I use a per-user config for <h>mpd</h>. Create <h>~/.config/mpd</h> with: <c>mkdir mpd</c>in the <h>~/.config/</h> directory.</li>
+			<li>Reference my dotfiles to see what I include in <h>~/.config/mpd/mpd.conf</h>.</li>
+			<li>I just want <h>mpd</h> to run at startup, so I add <c>mpd ~/.config/mpd/mpd.conf</c>to my <h>.xinitrc</h></li>
+			<li>To setup configs: <c>cp /usr/share/doc/ncmpcpp/config ~/.config/ncmpcpp/config<br>cp /usr/share/doc/ncmpcpp/bindings ~/.config/ncmpcpp/bindings</c></li>
+			<li>Check out my dotfiles for how I change these configs.</li>
+		</ol>
+
+		<h3>Image Viewer - sxiv</h3>
+
+		<p>SXIV is simple. It does everything you need it to and nothing you don't. It gets out of the way as much as possible, which is excellent.</p>
+
+		<ol>
+			<li>I like to use the Simple X Image Viewer. To install: <c>pacman -S sxiv</c></li>
+		</ol>
+
+		<h3>Video Player - mpv</h3>
+
+		<p>Similarly to SXIV, MPV is a video player which is full of all the features you need with none that you don't.</p>
+
+		<ol>
+			<li>I use <h>mpv</h> to play video files. Install with: <c>pacman -S mpv</c></li>
+		</ol>
+
+		<h3>PDF Reader - Zathura</h3>
+
+		<p>Zathura is a PDF (and PS and DJVU and Comic Book) reader which prioritizes letting you view documents. No long load times, or laggy scrolling. And it certainly doesn't nag you to upgrade to a premium, paid subscription (<i>cough cough ADOBE cough cough</i>).</p>
+
+		<ol>
+			<li>The PDF/Postscript file viewer that I like is Zathura. Install the Zathura base with: <c>pacman -S zathura</c></li>
+			<li>For PDF support install either the mupdf backend or the poppler backend. I personally use the mupdf backend. To install: <c>pacman -S zathura-pdf-mupdf</c></li>
+			<li>If you want PostScript support, install the PostScript backend. <c>pacman -S zathura-ps</c></li>
+			<li>I want Zathura to follow the tiled layout, so I add: <c>bspc rule -a Zathura state=tiled</c> to my <h>bspwmrc</c>.</li>
+		</ol>
+
+		<h3>Calculator - bc</h3>
+
+		<p>No fancy buttons or graphical elements, just a really simple calculator program.</p>
+
+		<ol>
+			<li>I like the command line calculator: <h>bc</h>. To install: <c>pacman -S bc</c></li>
+		</ol>
+
+		<h3>Mathematical Analysis Software - SageMath</h3>
+
+		<p>When a basic calculator won't cut it (like when you need to numerically solve an integral) Sagemath is a FLOSS go to alternative to Mathematica and Maple.</p>
+
+		<ol>
+			<li>Sagemath is my go to for mathematical analysis. To install: <c>pacman -S sagemath sagemath-doc</c></li>
+		</ol>
+
+		<h3>Financial Accounting Software - ledger</h3>
+
+		<p>To keep track of my personal finances, I use ledger.</li>
+
+		<ol>
+			<li>I use <h>ledger</h> to manage my personal finances. Install with: <c>pacman -S ledger</c></li>
+			<li>Ledger comes with the ability to plot your finances with <h>GNUPlot</h>. Install with: <c>pacman -S gnuplot</c></li>
+			<li>To actually use the plotting features, you'll need to add the <h>report</h> script to your scripts folder, see my dotfiles.</li>
+		</ol>
+
+		<h3>Messaging - Slack, Discord</h3>
+
+		<p>Communication with other people. Gotta hop on the proprietary train because everyone else is already there.</p>
+
+		<ol>
+			<li>Proprietary software, but I need it for work. Open source desktop clients "exist" although many of them are no longer supported or have many of the features you may need from Slack. I bite the bullet and use the official package: <c>yay -S slack-desktop</c></li>
+			<li>Proprietary software, but everyone I know uses it. You may be able to use a third-party open source client, but then you are violating the terms of service with Discord, and risking getting banned. Use at your own risk. <c>pacman -S discord</c></li>
+		</ol>
+
+		<footer>
+			
+			<ul class="footer">
+				
+				<a class="footer" href="https://git.nolanmcmahon.net"><li class="footer"><img class="footer" src="../icons/git.svg" width=36px height=36px></li></a>
+				<a class="footer" href=""><li class="footer"><img class="footer" src="../icons/searx.png" width=36px height=36px></li></a>
+				<a class="footer" href=""><li class="footer"><img class="footer" src="../icons/rss.png" width=36px height=36px></li></a>
+				<a class="footer" href=""><li class="footer"><img class="footer" src="../icons/donate.png" width=36px height=36px></li></a>
+				<a class="footer" href="mailto:nolan@nolanmcmahon.net"><li class="footer"><img class="footer" src="../icons/contact.png" width=36px height=36px></li></a>
+				<a class="footer" href="../about.html"><li class="footer"><img class="footer" src="../icons/about.png" width=36px height=36px></li></a>
+
+			</ul>
+
+		</footer>
+
+	</body>
+
+</html>
