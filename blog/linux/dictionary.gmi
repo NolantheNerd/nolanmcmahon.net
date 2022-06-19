@@ -13,7 +13,7 @@ Most people, when forced to look up a word, simply Google it. This is unacceptab
 * It requires a browser.
 * It requires a search engine.
 
-Enter sdcv! sdcv is a command-line tool version of a program called StarDict which can lookup words from offline reference materials (like single language dictionaries, multilanguage dictionaries, thesauri, etc). The beauty is that it's fast, free, and powerful! It can lookup a single word in many sources all at once!
+Enter sdcv! sdcv is a command-line version of a program called StarDict which can lookup words from offline reference materials (like single language dictionaries, multilanguage dictionaries, thesauri, etc). The beauty is that it's fast, free, and powerful! It can lookup a single word in many sources all at once!
 
 ## Installation
 
