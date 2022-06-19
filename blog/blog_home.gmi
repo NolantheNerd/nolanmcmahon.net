@@ -28,4 +28,4 @@ I'm a Very Boring Person (Coming Soon!)
 
 ## Computing
 
-What Software do I Use? (Coming Soon!)
+=> ./linux_home.gmi What Software do I Use?
