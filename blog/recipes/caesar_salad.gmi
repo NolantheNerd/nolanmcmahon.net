@@ -1,0 +1,31 @@
+=> ../../index.gmi Home
+
+# Caesar Salad (30 minutes)
+
+=> ../blog_home.gmi Back to Blog Home
+=> ../cooking_home.gmi Back to Recipes
+
+=> imgs/caesar_salad.jpg Doesn't This Look Delicious?
+
+## Ingredients:
+
+* 2 Chicken Breasts
+* 1 Head Romaine/Green Leaf/Red Leaf Lettuce
+* 3 Roma Tomatoes
+* 1 Small Red Onion
+* OPTIONAL: Crutons
+* OPTIONAL: Parmesan or Cheddar Cheese
+* Caesar Dressing
+
+## Directions:
+
+* Cut chicken breasts into pieces and add to a pan.
+* Set pan to medium heat. Add salt and pepper if desired. Fry until chicken is no longer pink. (10-15 minutes)
+* Cut, wash, and dry the lettuce.
+* Wash and slice the tomatoes.
+* Peel and dice the onion.
+* Add all of the above items to a plate (or a large bowl) and top with crutons, cheese, and dressing.
+* Enjoy!
+
+=> ../cooking_home.gmi Back to Recipes
+=> ../blog_home.gmi Back to Blog Home

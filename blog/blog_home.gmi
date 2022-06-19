@@ -1,0 +1,31 @@
+```
+    //////    //                      
+   //    //  //    ////      //////   
+  //////    //  //    //  //    //    
+ //    //  //  //    //  //    //     
+//////    //    ////      //////      
+                             //       
+                        ////          
+
+```
+=> ../index.gmi Home
+
+# Inside of My Mind
+
+I hold a number of different views about a wide variety of topics. Some are pretty standard and run-of-the-mill, others are more controversial. If you are curious about them, read on!
+
+## Being A Modern Munk
+
+I'm a Very Boring Person (Coming Soon!)
+
+## Christianity
+
+=> ./bible_bins_home.gmi Biblical Scripture Reference "Bins" Portal
+
+## Cooking
+
+=> ./cooking_home.gmi Recipes Portal
+
+## Computing
+
+What Software do I Use? (Coming Soon!)

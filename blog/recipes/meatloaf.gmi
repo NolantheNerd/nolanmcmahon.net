@@ -1,0 +1,35 @@
+=> ../../index.gmi Home
+
+# Meatloaf (60 minutes)
+
+=> ../blog_home.gmi Back to Blog Home
+=> ../cooking_home.gmi Back to Recipes
+
+=> imgs/meatloaf.jpg Doesn't This Look Delicious?
+
+## Ingredients:
+
+* 800g Extra Lean Ground Beef
+* 1/4 Cup Onion
+* 15 Unsalted Saltine Crackers
+* 1 Egg
+* 3 Tbsp Light Cheez Whiz
+* 4 Tbsp BBQ Sauce
+
+## Preparation:
+
+* Line a Metalic Baking Tray with Aluminium Foil
+* Dice or Blend the Onion
+* Crush the Crackers
+* Preheat Oven to 375°F
+
+## Directions:
+
+* In a large bowl, add beef, onion, egg, and Cheez Whiz. Mix with your hands, squeezing the meat through your fingers.
+* Transfer to baking tray and flatten into an inch or so thick loaf.
+* Spread BBQ sauce on top of the loaf as desired.
+* Bake at 375°F for 45 minutes.
+* Slice and serve. Enjoy!
+
+=> ../cooking_home.gmi Back to Recipes
+=> ../blog_home.gmi Back to Blog Home

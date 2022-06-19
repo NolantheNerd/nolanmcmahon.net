@@ -1,0 +1,96 @@
+:root {
+	--black: rgb(28, 27, 25);
+	--red: rgb(239, 47, 39);
+	--green: rgb(81, 159, 80);
+	--yellow: rgb(251, 184, 41);
+	--blue: rgb(44, 120, 191);
+	--magenta: rgb(224, 44, 109);
+	--cyan: rgb(10, 174, 179);
+	--white: rgb(186, 166, 127);
+	--brightblack: rgb(145, 129, 117);
+	--brightred: rgb(247, 83, 65);
+	--brightgreen: rgb(152, 188, 55);
+	--brightyellow: rgb(254, 208, 110);
+	--brightblue: rgb(104, 168, 228);
+	--brightmagenta: rgb(255, 92, 143);
+	--brightcyan: rgb(43, 228, 208);
+	--brightwhite: rgb(252, 232, 195);
+	--orange: rgb(255, 95, 0);
+	--brightorange: rgb(255, 135, 0);
+	--hard_black: rgb(18, 18, 18);
+	--xgray1: rgb(38, 38, 38);
+	--xgray2: rgb(48, 48, 48);
+	--xgray3: rgb(58, 58, 58);
+	--xgray4: rgb(68, 68, 68);
+	--xgray5: rgb(78, 78, 78);
+	--xgray6: rgb(88, 88, 88);
+}
+
+body {
+	background-color: var(--black);
+	color: var(--brightwhite);
+	font-family: monospace;
+	font-size: 14pt;
+	text-align: justify;
+	margin: auto;
+	display: inline-block;
+
+	padding-top: 3%;
+	padding-bottom: 3%;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+li {
+	list-style-position: inside;
+	color: var(--white);
+	text-align: left;
+}
+
+img {
+	max-width: 512px;
+	float: right;
+	margin-left: 30px;
+}
+
+pre {
+	font-size: 20pt;
+	color: var(--yellow);
+}
+
+h1 {
+	color: var(--red);
+}
+
+h2 {
+	color: var(--green);
+}
+
+h3 {
+	color: var(--orange);
+}
+
+blockquote {
+	color: var(--white);
+	font-style: italic;
+}
+
+a:link {
+	color: var(--blue);
+}
+
+a:hover {
+	color: var(--brightblue);
+}
+
+a:active {
+	color: var(--cyan);
+}
+
+a:visited {
+	color: var(--cyan);
+}
+
+a:visited:hover {
+	color: var(--brightblue);
+}
