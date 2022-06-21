@@ -1,4 +1,4 @@
-=> ../../index.html Home
+=> ../../index.gmi Home
 
 # A Dictionary and Thesaurus
 
