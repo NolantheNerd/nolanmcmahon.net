@@ -10,7 +10,7 @@
 
 # Just Like My Mom Makes It!
 
-=> blog_home.gmi Back to Blog
+=> ./blog_home.gmi Back to Blog
 
 I don't consider myself a sophisticated chef. I have a very limited set of tools, and a very limited amount of time to dedicate to cooking. Rest assured that these meals are delicious and (generally) quick to make!
 

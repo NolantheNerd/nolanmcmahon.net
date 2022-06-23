@@ -14,9 +14,9 @@
 
 I hold a number of different views about a wide variety of topics. Some are pretty standard and run-of-the-mill, others are more controversial. If you are curious about them, read on!
 
-## Being A Modern Munk
+## Being A Modern Monk
 
-I'm a Very Boring Person (Coming Soon!)
+=> ./modern_monk_home.gmi I'm a Very Boring Person
 
 ## Christianity
 

@@ -1,0 +1,66 @@
+```
+//      //                                       
+ //  //    //////  //      //      //  //////    
+  //    //    //  //      //      //  //    //   
+ //    //    //    //  //  //  //    //    //    
+//      //////      //      //      //    //     
+
+```
+=> ../index.gmi Home
+
+# Tell Us About Yourself
+
+=> ./blog_home.gmi Back to Blog
+
+Introductions. I'm sure that you're familiar with them. Someone new has just started at the office and the boss suggests that everybody go around give a brief summary of themselves. "Tell us your name, what your role is here at the company, and something interesting about yourself."
+
+I used to hate doing these. What is there to say?
+
+Recently however, I've found a great way to introduce myself. It goes something like this:
+
+"Hi, I'm Nolan! I'm probably the most boring person you'll ever meet because it's easier to describe me by the things that I don't do, rather than the things I do."
+
+Then I pick one of the following truthful abstentions and expand upon it a little.
+
+If you'll humour me for just a minute, I'd love to share some of these excercies in self restraint that I've tried to pick up over my life. Most of them fit into just a four main categories.
+
+## I Don't Consume Media
+
+This means that I do not:
+
+* Watch YouTube/Twitch
+* Use Social Media
+* Use My Cell Phone
+* Play Video Games
+* Consume the News
+* Own a Television
+* Watch Sports
+* Subscribe to Television/Movie/Music Streaming Services
+* Go to Movie Theatres
+
+## I Don't Consume Most Food and Drink
+
+This means that I do not:
+
+* Drink Alcohol or Smoke Marijuana
+* Drink Coffee or Consume Caffine
+* Eat out at Restaurants
+* Consume Premade Frozen Food
+* Drink Pop/Tea/Juice/Smoothies
+
+## I Don't Like Adventures
+
+This means that I do not:
+
+* Own a Car
+* Travel
+* Camp
+* Own a Pet
+
+## I Don't Like Risk
+
+This means that I do not:
+
+* Gamble
+* Make Purchases with a Credit Card
+* Live Beyond my Financial Means
