@@ -1,0 +1,46 @@
+=> ../../index.gmi Home
+
+# Lasagna Rollups (90 minutes)
+
+=> ../blog_home.gmi Back to Blog Home
+=> ../cooking_home.gmi Back to Recipes
+
+=> imgs/lasagna_rollups.jpg Doesn't This Look Delicious?
+
+## Ingredients:
+
+* 400g Extra Lean Ground Beef
+* 1 Egg
+* 1 Container (1 1/2 Cups) Light Ricotta Cheese
+* 3 Cups Mozzarella Cheese
+* 2 Tsp Basil
+* 1 Tsp Parsley Flakes
+* 1 Tsp Oregano
+* 1/4 Tsp Garlic Powder
+* 1/8 Tsp Salt
+* 1/8 Tsp Pepper
+* 14 (or so) Lasagna Noodles
+* 1 Jar (700mL) Pasta Sauce
+
+## Preparation:
+
+* Shred Mozzarella Cheese
+* Preheat oven to 375°F
+
+## Directions:
+
+* Add beef to a pan. Scramble fry over medium heat. (10-15 minutes)
+* Set a large pot of water to boil and cook lasagna noodles according to package directions.
+* Spread half of the pasta sauce in the bottom of a glass baking dish.
+* To a large bowl, add egg. Lightly beat the egg. Combine with beef, 2 of the 3 cups of mozzarella cheese, ricotta cheese, and spices.
+* Lay out lengthwise on the countertop all of the lasagna noodles.
+* Spoon a roughly equal portion of the filling mixture onto each noodle.
+* Carefully roll up each noodle and place it in the glass baking dish.
+* Top the rolled up noodles with the other half of the pasta sauce.
+* Cover the lasagna noodles with the remaining mozzarella cheese.
+* Bake for 55 minutes.
+* Let stand for 5 minutes.
+* Enjoy!
+
+=> ../cooking_home.gmi Back to Recipes
+=> ../blog_home.gmi Back to Blog Home

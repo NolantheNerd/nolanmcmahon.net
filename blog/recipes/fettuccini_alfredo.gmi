@@ -1,0 +1,39 @@
+=> ../../index.gmi Home
+
+# Fettuccini Alfredo (45 minutes)
+
+=> ../blog_home.gmi Back to Blog Home
+=> ../cooking_home.gmi Back to Recipes
+
+=> imgs/fettucini_alfredo.jpg Doesn't This Look Delicious?
+
+## Ingredients:
+
+* 2 Chicken Breasts
+* 1 Tbsp Olive Oil
+* 2 Tbsp Butter or Margarine
+* 2 Tbsp Flour
+* 1/4 Tsp Garlic Powder
+* 1/4 Tsp Pepper
+* 1/2 Tsp Salt
+* 500mL 6% Cream
+* 1 Cup Mozzarella Cheese
+* 1/2 Cup Parmesan Cheese
+* 1 Box (375g) Fettuccini Noodles
+
+## Preparation:
+
+* Shred Cheeses
+
+## Directions:
+
+* Cut the chicken into small pieces and add to a pan.
+* Heat the chicken with medium heat until chicken is cooked.(10 minutes)
+* In a medium pot, add olive oil, butter, flour, and spices. Turn the pot onto medium-low heat and whisk frequently until the butter is melted and a homogeneous roux is formed.
+* Add cream to pot and whisk. Turn heat up to medium. Whisk frequently to prevent the roux/cream from sticking to the bottom of the pot and burning. Continue until the mixture is boiling. (15-25 minutes)
+* Meanwhile, cook fettuccini noodles to package directions.
+* Once the sauce is boiling, remove from heat and add cheeses. Whisk until homogeneous. If sauce is not warm enough to melt the cheese, use medium-low heat to assist in the melting process. (5-10 minutes)
+* Add the chicken and sauce to the pasta a stir. Enjoy!
+
+=> ../cooking_home.gmi Back to Recipes
+=> ../blog_home.gmi Back to Blog Home

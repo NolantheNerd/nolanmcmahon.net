@@ -1,0 +1,69 @@
+=> ../../index.gmi Home
+
+# A Dictionary and Thesaurus
+
+=> ../blog_home.gmi Back to Blog
+=> ../linux_home.gmi Back to the Software I Use
+
+Looking up words is one of those activities that I promised myself back in the eighth grade that I would never do again after I was finished with school. Thankfully my opinions have evolved since then. Now I love learning new words!
+
+Most people, when forced to look up a word, simply Google it. This is unacceptable. Why?
+
+* It requires an internet connection.
+* It requires a browser.
+* It requires a search engine.
+
+Enter sdcv! sdcv is a command-line version of a program called StarDict which can lookup words from offline reference materials (like single language dictionaries, multilanguage dictionaries, thesauri, etc). The beauty is that it's fast, free, and powerful! It can lookup a single word in many sources all at once!
+
+## Installation
+
+On Arch GNU/Linux:
+
+> sudo pacman -S sdcv
+
+It doesn't come with any dictionaries by default, so you get to choose which sources you want to include with it. The Arch wiki recommends a site to use to download StarDict/sdcv compatible dictionaries.
+
+=> http://download.huzheng.org/ Find Dictionaries/Thesauri Here!
+
+I chose the Concise Oxford English Dictionary and Concise Oxford English Thesaurus.
+
+=> http://download.huzheng.org/bigdict/stardict-Concise_Oxford_English_Dictionary-2.4.2.tar.bz2 Concise Oxford English Dictionary
+=> http://download.huzheng.org/bigdict/stardict-Concise_Oxford_Thesaurus_2nd_Ed-2.4.2.tar.bz2 Concise Oxford English Thesaurus
+
+Download them. To use them, you need to extract them with:
+
+> tar -xjvf dictionary_file
+> tar -xjvf thesaurus_file
+
+Then you need to put them were sdcv can find them. By default, that's 
+
+> /usr/share/stardict/dic
+
+but I prefer for them to be installed for my user only. I instead put them in
+
+> ~/.local/share/stardict/dic
+
+If you choose to install them in your home directory like me, simply set the environment variable
+
+> export STARDICT_DATA_DIR
+
+to your desired location. I also set the pager to less so that the output is easier to read:
+
+> export SDCV_PAGER='less --quit-if-one-screen -RX'
+
+## Usage
+
+Using sdcv is super simple! Type
+
+> sdcv
+
+on the terminal to enter the interactive mode. Look up words to your heart's content. Or use
+
+> sdcv word
+
+to look up a single word. As always, more options are visible with
+
+> man sdcv
+
+=> ../linux_home.gmi Back to the Software I Use
+=> ../blog_home.gmi Back to Blog

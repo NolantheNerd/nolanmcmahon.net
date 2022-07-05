@@ -1,0 +1,51 @@
+=> ../../index.gmi Home
+
+# Pineapple Chicken (105 minutes)
+
+=> ../blog_home.gmi Back to Blog Home
+=> ../cooking_home.gmi Back to Recipes
+
+=> imgs/pineapple_chicken.jpg Doesn't This Look Delicious?
+
+## Ingredients:
+
+### Stir-Fry
+
+* 2 Chicken Breasts
+* 1 Can (400mL) Pineapple Tidbits
+* 1 1/2 Cups Basmati Rice
+* 3 Cups Water
+
+### Teriyaki Sauce
+
+* 2 Tbsp Corn Starch
+* 2 Tbsp Room Temperture Water
+* 1/2 Cup Brown Sugar
+* 1/2 Cup Apple Cider Vinegar
+* 1/2 Cup Low Sodium Soy Sauce
+* 1/2 Cup Water
+* 4 Tbsp Honey
+* 2 Cloves Minced Garlic
+* 1 Tsp Ground Ginger
+* 1/2 Tsp Pepper
+
+## Preparation:
+
+* Drain Juice from Can of Pineapple
+* Preheat Oven to 400°F
+
+## Directions:
+
+* In a medium pot, add corn starch and room temperature water. Whisk carefully until homogeneous. Then add remaining teriyaki sauce ingredients.
+* Heat sauce on medium heat until it boils, stirring frequently to prevent the sauce from burning.
+* Once it boils, whisk intensely for 15 seconds, then remove from heat.
+* Meanwhile, cut chicken into pieces and add to glass baking dish.
+* Add pineapple and teriyaki sauce to chicken in the baking dish.
+* Bake for 20 minutes.
+* Stir the mixture and bake for another 20 minutes.
+* Meanwhile, make rice. Without a rice cooker: add rice and water to a pot and heat on high. Let boil for 15 minutes or until all water has evaporated/absorbed.
+* Top bed of rice with pineapple chicken.
+* Enjoy!
+
+=> ../cooking_home.gmi Back to Recipes
+=> ../blog_home.gmi Back to Blog Home

@@ -48,9 +48,9 @@ li {
 }
 
 img {
-	max-width: 256px;
-	float: left;
-	margin-right: 30px;
+	max-width: 512px;
+	float: right;
+	margin-left: 30px;
 }
 
 pre {

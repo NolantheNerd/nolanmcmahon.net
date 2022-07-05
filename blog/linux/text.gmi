@@ -1,0 +1,75 @@
+=> ../../index.gmi Home
+
+# Text Editor
+
+=> ../blog_home.gmi Back to Blog
+=> ../linux_home.gmi Back to the Software I Use
+
+My primary purpose for using a computer is editing text. Whether I'm configuring how my system looks, writing blog entries, or developing software I'm editing plain text files. Plain text is by far the best way to digitally store, modify, and transmit information. Why?
+
+* Text files can easily be version controlled with git.
+* Text files can easily be compared with diffs.
+* Text files can easily be manipulated with scripts.
+* Text files can easily be searched for their content with tools like grep.
+* Text files can easily be compressed.
+* Text files can easily be shared with others, regardless of the computer, OS, or suite of programs that they use.
+* Text files can be powerfully edited with any text editor (for example to make regex replacements).
+* Text files do not take up much storage space.
+* Text files are far more persistent through time. Proprietary and/or complex file types will come and go but plain text will always be readable.
+
+Since I spend such a considerable amount of time editing text, I want to be able to edit text as efficiently as possible. Thus, I've made vim my text editor.
+
+### Side Note
+
+For quite a while, I used neovim as my text editor which is "basically just like vim". But even after spending a considerable amount of time with it, I really couldn't discern the differences between the two. I'm not particularly motivated to use a new piece of technology just because it's vaguely "better" so I've switched back to vim proper. If you have some list of reasons why neovim is undeniably the superior program and should unequivocally replace regular ol' vim, shoot me an email. I'd love to hear your motivations.
+
+## Installation
+
+On Arch GNU/Linux: 
+
+> sudo pacman -S vim
+
+You'll probably want to start by changing some of vim's settings. The settings are stored in a file called .vimrc in your home directory. For example, I want the lines of my files labelled with their line number, so I use: 
+
+> set number
+
+in my .vimrc. I have many other commands in my .vimrc, which would be far too tedious to describe here, but feel free to take a look at them in my dotfile repository!
+
+=> https://git.nolanmcmahon.net My Dotfiles
+
+The only other aspect that I'll mention here are vim extensions. If you aren't aware, you can extend vim with other features that are not built in by default using so called plugins. These plugins and are written (generally) in Vim Script. Plugins are generally managed using a plugin manager, for example, vim-plug.
+
+=> https://github.com/junegunn/vim-plug vim-plug GitHub Page
+
+As instucted in the vim-plug README, you can install vim-plug using:
+
+> curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+This creates a directory in your home directory called .vim where all of your extension scripts will be stored. Then it is just a matter of adding:
+
+> call plug#begin()
+> 	Plug 'github_repo_for_plugin'
+> call plug#end()
+
+to your .vimrc to add plugins to your vim environment. Among others, I use:
+
+=> https://github.com/sheerun/vim-polyglot sheerun/vim-polyglot
+=> https://github.com/petRUShka/vim-sage petRUShka/vim-sage
+=> https://github.com/itchyny/lightline.vim itchyny/lightline.vim
+=> https://github.com/junegunn/fzf.vim junegunn/fzf.vim
+
+in my .vimrc. To install/update these plugins after adding them to your .vimrc:
+
+> :PlugInstall
+> :PlugUpdate
+
+## Usage
+
+If you've never used vim before, you'll want to get some instructions on the basics. Open up a terminal and type:
+
+> vimtutor
+
+This will guide you through the basics of vim quite nicely.
+
+=> ../linux_home.gmi Back to the Software I Use
+=> ../blog_home.gmi Back to Blog

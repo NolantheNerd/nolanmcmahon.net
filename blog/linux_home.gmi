@@ -1,0 +1,15 @@
+```
+    //        //                                
+   //            //////    //    //  //    //   
+  //        //  //    //  //    //    ////      
+ //        //  //    //  //    //  //    //     
+////////  //  //    //    //////  //    //      
+                                                
+```
+=> ../index.gmi Home
+
+# Arch GNU/Linux
+
+=> blog_home.gmi Back to Blog
+
+=> linux/dictionary.gmi Dictionary & Thesaurus
