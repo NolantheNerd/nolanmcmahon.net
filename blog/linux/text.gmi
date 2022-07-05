@@ -10,7 +10,7 @@ My primary purpose for using a computer is editing text. Whether I'm configuring
 * Text files can easily be version controlled with git.
 * Text files can easily be compared with diffs.
 * Text files can easily be manipulated with scripts.
-* Text files can easily be searched for their content with tools like grep.
+* Text files can easily be searched by their content with tools like grep.
 * Text files can easily be compressed.
 * Text files can easily be shared with others, regardless of the computer, OS, or suite of programs that they use.
 * Text files can be powerfully edited with any text editor (for example to make regex replacements).
@@ -21,7 +21,7 @@ Since I spend such a considerable amount of time editing text, I want to be able
 
 ### Side Note
 
-For quite a while, I used neovim as my text editor which is "basically just like vim". But even after spending a considerable amount of time with it, I really couldn't discern the differences between the two. I'm not particularly motivated to use a new piece of technology just because it's vaguely "better" so I've switched back to vim proper. If you have some list of reasons why neovim is undeniably the superior program and should unequivocally replace regular ol' vim, shoot me an email. I'd love to hear your motivations.
+For quite a while, I used neovim as my text editor which is "basically just like vim". And even after spending a considerable amount of time with it, I really couldn't discern the differences between the two. I'm not particularly motivated to use a new piece of technology just because it's vaguely "better" so I've switched back to vim proper. If you have some list of reasons why neovim is undeniably the superior program and should unequivocally replace regular ol' vim, shoot me an email. I'd love to hear your motivations.
 
 ## Installation
 
@@ -29,13 +29,19 @@ On Arch GNU/Linux:
 
 > sudo pacman -S vim
 
-You'll probably want to start by changing some of vim's settings. The settings are stored in a file called .vimrc in your home directory. For example, I want the lines of my files labelled with their line number, so I use: 
+### Basic Vim Settings
+
+If you already know how to use vim, the first thing you'll want to is start changing some of vim's settings. Take a look at my .vimrc if you are curious about how I modify vim. 
+
+=> docs/vimrc.txt My .vimrc
+
+Otherwise, for those who don't already know how to use vim, let me explain. The settings are stored in a file called .vimrc in your home directory. Vim loads this file each time it starts and applies each setting you specify here to the new vim environment. I, for example, like to have the lines of my files numbered when I'm viewing or editing them, so I have:
 
 > set number
 
-in my .vimrc. I have many other commands in my .vimrc, which would be far too tedious to describe here, but feel free to take a look at them in my dotfile repository!
+in my .vimrc. There are many, many more available settings for you to play with in vim. Take a look at my .vimrc (or others online) for inspiration!
 
-=> https://git.nolanmcmahon.net My Dotfiles
+### Plugins
 
 The only other aspect that I'll mention here are vim extensions. If you aren't aware, you can extend vim with other features that are not built in by default using so called plugins. These plugins and are written (generally) in Vim Script. Plugins are generally managed using a plugin manager, for example, vim-plug.
 
