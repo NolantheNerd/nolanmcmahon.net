@@ -1,0 +1,112 @@
+" Plugins
+call plug#begin('~/.vim/plugged')
+	" Better Syntax Support
+	Plug 'sheerun/vim-polyglot'
+	" Better Statusline
+	Plug 'itchyny/lightline.vim'
+	" Sage File Type Support
+	Plug 'petRUShka/vim-sage'
+	" fzf for Vim
+	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+	Plug 'junegunn/fzf.vim'
+	" srcery-vim Colour Theme
+	Plug 'srcery-colors/srcery-vim'
+
+call plug#end()
+
+" Set the Colour Scheme
+set background=light
+colorscheme srcery
+
+" Set Lightline (Status Bar) Colour Theme
+set laststatus=2
+let g:lightline = {
+	\ 'colorscheme': 'srcery',
+    \ }
+
+" Basic Settings for All File Types
+set number
+set relativenumber
+set tabstop=4
+set shiftwidth=4
+set noexpandtab
+set softtabstop=0
+set splitbelow splitright
+" noremap <F3> :set hlsearch!<CR>
+noremap ;q :nohl<Enter>
+
+" Turn Vim into an IDE
+" General Commands for all Files Types
+set nocompatible
+set noshowmode
+filetype plugin on
+syntax on
+let mapleader = " "
+set timeoutlen=2000
+nnoremap <leader>o :Files<CR>
+
+" Groff Filetype
+" Prepare to Jump Between Location Points
+autocmd FileType nroff inoremap <leader><leader> <Esc>/<++><Enter>"_c4l
+" Shortcut for Numbered Bullet Point
+autocmd FileType nroff inoremap ;n .IP \f[NB]\n+[step].<Enter>
+" Shortcut for Lettered Bullet Point
+autocmd FileType nroff inoremap ;l .IP \f[NB]()<Enter><++><Esc>k8li
+" Make an Equation Left Justified
+autocmd FileType nroff inoremap ;f .EQ L<Enter><Enter>.EN<Enter><++><Esc>2ki
+" Make an Equation Centered
+autocmd FileType nroff inoremap ;a .EQ<Enter><Enter>.EN<Enter><++><Esc>2ki
+" Make an Inline Equation
+autocmd FileType nroff inoremap ;s $$ <++><Esc>5hi
+" Make a Numbered List Item
+autocmd FileType nroff inoremap ;j .IP \f[NB]\n+[step]. <Enter><++><Esc>kA
+" Make a Lettered List Item
+autocmd FileType nroff inoremap ;k .IP \f[NB]() 4<Enter><++><Esc>k0f(a
+" Make a Code Block
+autocmd FileType nroff inoremap ;code .B1<Enter>.na<Enter>.EQ<Enter>delim off<Enter>.EN<Enter><Enter>.EQ<Enter>delim $$<Enter>.EN<Enter>.ad<Enter>.B2<Enter><++><Esc>6ki
+
+" EQN Math Shortcuts
+" Matrix Shortcuts
+" Augmented Matrix of Size 2x3
+autocmd FileType nroff inoremap ;mam23 left [<Enter>matrix {<Enter>ccol {<++> above <++>}<Enter>ccol {<++> above <++>}<Enter>}<Enter>left \|<Enter>matrix {<Enter>ccol {<++> above <++>}<Enter>}<Enter>right ]<Enter><++><Esc>8k3lc4l
+" Matrix of Size 2x3
+autocmd FileType nroff inoremap ;mm23 left [<Enter>matrix {<Enter>ccol {<++> above <++>}<Enter>ccol {<++> above <++>}<Enter>ccol {<++> above <++>}<Enter>}<Enter>right ]<Enter><++><Esc>5k3lc4l
+" Augmented Matrix of Size 3x3
+autocmd FileType nroff inoremap ;mam33 left [<Enter>matrix {<Enter>ccol {<++> above <++> above <++>}<Enter>ccol {<++> above <++> above <++>}<Enter>}<Enter>left \|<Enter>matrix {<Enter>ccol {<++> above <++> above <++>}<Enter>}<Enter>right ]<Enter><++><Esc>8k3lc4l
+" Matrix of Size 3x3
+autocmd FileType nroff inoremap ;mm33 left [<Enter>matrix {<Enter>ccol {<++> above <++> above <++>}<Enter>ccol {<++> above <++> above <++>}<Enter>ccol {<++> above <++> above <++>}<Enter>}<Enter>right ]<Enter><++><Esc>5k3lc4l
+" Augmented Matrix of Size 3x4
+autocmd FileType nroff inoremap ;mam34 left [<Enter>matrix {<Enter>ccol {<++> above <++> above <++>}<Enter>ccol {<++> above <++> above <++>}<Enter>ccol {<++> above <++> above <++>}<Enter>}<Enter>left \|<Enter>matrix {<Enter>ccol {<++> above <++> above <++>}<Enter>}<Enter>right ]<Enter><++><Esc>9k3lc4l
+" Matrix of Size 3x4
+autocmd FileType nroff inoremap ;mm34 left [<Enter>matrix {<Enter>ccol {<++> above <++> above <++>}<Enter>ccol {<++> above <++> above <++>}<Enter>ccol {<++> above <++> above <++>}<Enter>ccol {<++> above <++> above <++>}<Enter>}<Enter>right ]<Enter><++><Esc>6k3lc4l
+" Augmented Matrix of Size 4x4
+autocmd FileType nroff inoremap ;mam44 left [<Enter>matrix {<Enter>ccol {<++> above <++> above <++> above <++>}<Enter>ccol {<++> above <++> above <++> above <++>}<Enter>ccol {<++> above <++> above <++> above <++>}<Enter>}<Enter>left \|<Enter>matrix {<Enter>ccol {<++> above <++> above <++> above <++>}<Enter>}<Enter>right ]<Enter><++><Esc>9k3lc4l
+" Matrix of Size 4x4
+autocmd FileType nroff inoremap ;mm44 left [<Enter>matrix {<Enter>ccol {<++> above <++> above <++> above <++>}<Enter>ccol {<++> above <++> above <++> above <++>}<Enter>ccol {<++> above <++> above <++> above <++>}<Enter>ccol {<++> above <++> above <++> above <++>}<Enter>}<Enter>right ]<Enter><++><Esc>6k3lc4l
+" Augmented Matrix of Size 3x5
+autocmd FileType nroff inoremap ;mam35 left [<Enter>matrix {<Enter>ccol {<++> above <++> above <++>}<Enter>ccol {<++> above <++> above <++>}<Enter>ccol {<++> above <++> above <++>}<Enter>ccol {<++> above <++> above <++>}<Enter>}<Enter>left \|<Enter>matrix {<Enter>ccol {<++> above <++> above <++>}<Enter>}<Enter>right ]<Enter><++><Esc>10k3lc4l
+" Matrix of Size 3x5
+autocmd FileType nroff inoremap ;mm35 left [<Enter>matrix {<Enter>ccol {<++> above <++> above <++>}<Enter>ccol {<++> above <++> above <++>}<Enter>ccol {<++> above <++> above <++>}<Enter>ccol {<++> above <++> above <++>}<Enter>ccol {<++> above <++> above <++>}<Enter>}<Enter>right ]<Enter><++><Esc>7k3lc4l
+" Augmented Matrix of Size 4x5
+autocmd FileType nroff inoremap ;mam45 left [<Enter>matrix {<Enter>ccol {<++> above <++> above <++> above <++>}<Enter>ccol {<++> above <++> above <++> above <++>}<Enter>ccol {<++> above <++> above <++> above <++>}<Enter>ccol {<++> above <++> above <++> above <++>}<Enter>}<Enter>left \|<Enter>matrix {<Enter>ccol {<++> above <++> above <++> above <++>}<Enter>}<Enter>right ]<Enter><++><Esc>10k3lc4l
+" Matrix of Size 4x5
+autocmd FileType nroff inoremap ;mm45 left [<Enter>matrix {<Enter>ccol {<++> above <++> above <++> above <++>}<Enter>ccol {<++> above <++> above <++> above <++>}<Enter>ccol {<++> above <++> above <++> above <++>}<Enter>ccol {<++> above <++> above <++> above <++>}<Enter>ccol {<++> above <++> above <++> above <++>}<Enter>}<Enter>right ]<Enter><++><Esc>7k3lc4l
+" Augmented Matrix of Size 4x6
+autocmd FileType nroff inoremap ;mam46 left [<Enter>matrix {<Enter>ccol {<++> above <++> above <++> above <++>}<Enter>ccol {<++> above <++> above <++> above <++>}<Enter>ccol {<++> above <++> above <++> above <++>}<Enter>ccol {<++> above <++> above <++> above <++>}<Enter>ccol {<++> above <++> above <++> above <++>}<Enter>}<Enter>left \|<Enter>matrix {<Enter>ccol {<++> above <++> above <++> above <++>}<Enter>}<Enter>right ]<Enter><++><Esc>11k3lc4l
+" Matrix of Size 4x6
+autocmd FileType nroff inoremap ;mm46 left [<Enter>matrix {<Enter>ccol {<++> above <++> above <++> above <++>}<Enter>ccol {<++> above <++> above <++> above <++>}<Enter>ccol {<++> above <++> above <++> above <++>}<Enter>ccol {<++> above <++> above <++> above <++>}<Enter>ccol {<++> above <++> above <++> above <++>}<Enter>ccol {<++> above <++> above <++> above <++>}<Enter>}<Enter>right ]<Enter><++><Esc>8k3lc4l
+" Augmented Matrix of Size 4x7
+autocmd FileType nroff inoremap ;mam47 left [<Enter>matrix {<Enter>ccol {<++> above <++> above <++> above <++>}<Enter>ccol {<++> above <++> above <++> above <++>}<Enter>ccol {<++> above <++> above <++> above <++>}<Enter>ccol {<++> above <++> above <++> above <++>}<Enter>ccol {<++> above <++> above <++> above <++>}<Enter>ccol {<++> above <++> above <++> above <++>}<Enter>}<Enter>left \|<Enter>matrix {<Enter>ccol {<++> above <++> above <++> above <++>}<Enter>}<Enter>right ]<Enter><++><Esc>12k3lc4l
+" Matrix of Size 4x7
+autocmd FileType nroff inoremap ;mm47 left [<Enter>matrix {<Enter>ccol {<++> above <++> above <++> above <++>}<Enter>ccol {<++> above <++> above <++> above <++>}<Enter>ccol {<++> above <++> above <++> above <++>}<Enter>ccol {<++> above <++> above <++> above <++>}<Enter>ccol {<++> above <++> above <++> above <++>}<Enter>ccol {<++> above <++> above <++> above <++>}<Enter>ccol {<++> above <++> above <++> above <++>}<Enter>}<Enter>right ]<Enter><++><Esc>9k3lc4l
+
+" Groff Auto-Preview
+" Set Groff Documents to Create Preview and Open in Zathura
+" autocmd BufEnter *.ms silent !groff -m ms -e <afile> -Tps > preview.ps && zathura preview.ps & disown
+" Set Groff Documents to Autoupdate a PDF when Saved
+" autocmd BufWritePost *.ms silent !groff -m ms -e <afile> -Tps > preview.ps
+" Delete Groff Compiled PDF When Vim Quits
+" autocmd ExitPre *.ms !rm preview.ps
+
+" Disable ftplugin PEP8 Recommended Expandtab/Tabstop/Shiftwidth etc.
+let g:python_recommended_style = 0
