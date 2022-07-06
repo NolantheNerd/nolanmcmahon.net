@@ -1,16 +1,16 @@
 ```
-      ////    //                              //      
-   //    //  //////      ////    //    //  ////////   
-  ////////  //    //  //    //  //    //    //        
- //    //  //    //  //    //  //    //    //         
-//    //  //////      ////      //////      ////      
+      ////    //                              //   
+   //    //  //////      ////    //    //  ////////
+  ////////  //    //  //    //  //    //    //     
+ //    //  //    //  //    //  //    //    //      
+//    //  //////      ////      //////      ////   
 
 ```
 => ./index.gmi Home
 
 # Who am I?
 
-Hi! My name is Nolan McMahon. First and foremost, I am a devout protestant, baptist Christian. My life-long goal is continually strengthen my personal relationship with Jesus Christ and live each and everyday in a way that brings glory to Him.
+Hi! My name is Nolan McMahon. First and foremost, I am a devout protestant Christian. My life-long goal is to continually strengthen my personal relationship with Jesus Christ and live each and everyday in a way that brings glory to Him.
 
 I’m the Machine Learning Specialist at a marketing and technology company called LoKnow. Currently I’m working on a product called Rover which uses machine learning to devise relevant, “google-able” search phrases for our client’s websites.
 
