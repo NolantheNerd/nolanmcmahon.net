@@ -10,6 +10,11 @@
 
 # Arch GNU/Linux
 
+## Software I Use
+
+=> linux/dictionary.gmi Dictionary & Thesaurus (sdcv)
+=> linux/text.gmi Text Editor (vim)
+=> linux/budgeting.gmi Budgeting Software (ledger)
+
 => blog_home.gmi Back to Blog
 
-=> linux/dictionary.gmi Dictionary & Thesaurus
