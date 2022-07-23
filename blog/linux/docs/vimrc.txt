@@ -11,6 +11,12 @@ call plug#begin('~/.vim/plugged')
 	Plug 'junegunn/fzf.vim'
 	" srcery-vim Colour Theme
 	Plug 'srcery-colors/srcery-vim'
+	" goyo for Focus
+	Plug 'junegunn/goyo.vim'
+	" LimeLight for Focus
+	Plug 'junegunn/limelight.vim'
+	" Substitution Preview
+	Plug 'markonm/traces.vim'
 
 call plug#end()
 
@@ -44,6 +50,11 @@ syntax on
 let mapleader = " "
 set timeoutlen=2000
 nnoremap <leader>o :Files<CR>
+
+" Goyo/LimeLight Config
+nnoremap <leader>g :Goyo<CR>
+autocmd! User GoyoEnter Limelight
+autocmd! User GoyoLeave Limelight!
 
 " Groff Filetype
 " Prepare to Jump Between Location Points

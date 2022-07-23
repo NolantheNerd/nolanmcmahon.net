@@ -64,6 +64,9 @@ to your .vimrc to add plugins to your vim environment. Among others, I use:
 => https://github.com/itchyny/lightline.vim itchyny/lightline.vim
 => https://github.com/junegunn/fzf.vim junegunn/fzf.vim
 => https://github.com/srcery-colors/srcery-vim srcery-colors/srcery-vim
+=> https://github.com/markonm/traces.vim markonm/traces.vim
+=> https://github.com/junegunn/goyo.vim junegunn/goyo.vim
+=> https://github.com/junegunn/limelight.vim junegunn/limelight.vim
 
 To install/update these plugins after adding them to your .vimrc:
 
