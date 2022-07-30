@@ -10,7 +10,7 @@
 
 => ./index.gmi Home
 => blog/blog_home.gmi Blog
-Projects (Coming Soon!)
+=> projects/projects_home.gmi Personal Projects
 
 ## Who am I?
 
