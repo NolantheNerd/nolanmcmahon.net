@@ -16,6 +16,7 @@
 => linux/dictionary.gmi Dictionary & Thesaurus (sdcv)
 => linux/text.gmi Text Editor (vim)
 => linux/budgeting.gmi Budgeting Software (ledger)
+=> linux/video.gmi Video Player (mpv/youtube-dl)
 
 => blog_home.gmi Back to Blog
 
