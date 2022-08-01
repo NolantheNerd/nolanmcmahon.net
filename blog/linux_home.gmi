@@ -12,6 +12,7 @@
 
 ## Software I Use
 
+=> linux/keyboard_mouse.gmi Keyboard Shortcuts and Hiding the Mouse Cursor (sxhkd/unclutter)
 => linux/dictionary.gmi Dictionary & Thesaurus (sdcv)
 => linux/text.gmi Text Editor (vim)
 => linux/budgeting.gmi Budgeting Software (ledger)
