@@ -2,7 +2,17 @@
 
 # What I Enjoy Working On
 
-I'm not one for watching TV and movies, or scrolling through social media. I'd much rather work on my personal projects when I have free time. This website is an example of one of my personal projects! Here are some of my others:
+I'm not one for watching television and movies, or scrolling through social media. I'd much rather work on my personal projects when I have free time. This website is an example of one of my personal projects! Here are some of my others:
+
+## Reading - Expanding My Mind
+
+Reading is a wonderful way to entertain the mind. It gives the reader full control over the flow and pacing of the content while leaving him fully open to visualize and imagine the concepts in the way that seems natural to him. Written work comes in a wide variety of flavours, meaning that there is a genre out there for everyone, assuming one has an attention span long enough and sufficient mental energy at one's disposal to bother reading in the first place.
+
+One could externalize the process of thought - that is: idea inculcation, development, and application as reading and writing. To read and write is to think. As such, I enjoy writing about what I've read. The process helps me to work through the ideas that are trapped in the echo chamber of my own head and organize them into a more coherent form. That is the purpose of this project.
+
+Most of the written content that I own is based in the physical sciences - mathematics, statistics, and physics. But I've recently taken an interest in Christian Theology. If any of this is intriguing to you, why not browse my library? All related notes, reviews, and essays are linked to from there.
+
+=> library.gmi My Personal Library
 
 ## STEM - Learning How God Made the Universe
 
@@ -14,7 +24,7 @@ I went to the University of Calgary and graduated with a BSc. in Honours Physics
 
 This project is designed to address both of those concerns. My current plan is to reread and study all of the courses that I took throughout university in both mathematics and physics in an effort to actually understand the concepts as they are presented. To complement my study, I'm also going through them and completing at least a portion of the given exercises and summarizing all of the concepts in my own words. I'm doing all of this work digitally and compiling the results into PDFs, which you are welcome to use for your own purposes.
 
-LINK TO STEM COMING SOON
+LINK COMING SOON!
 
 ## Disease Simulator - Model How Diseases Spread Through a Population
 

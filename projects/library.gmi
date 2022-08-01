@@ -1,0 +1,73 @@
+```
+    //////                        //                  
+   //    //    ////      ////    //  //      //////   
+  //////    //    //  //    //  ////      ////        
+ //    //  //    //  //    //  //  //        ////     
+//////      ////      ////    //    //  //////        
+
+```
+=> ../index.gmi Home
+=> projects_home.gmi Back to Projects
+
+# What I Have on My Shelf
+
+As a child, I was never that motiviated to read. Retrospectively, that was a direct consequence of my addiction to video games, television, and the like. But now that I've made a conscious effort to extract those distractions from my day-to-day, I'm finding reading to be far more enjoyable.
+
+I've organized the books that I have into rough categories based on topic. Books accompanied by a link have my review, thoughts, or related essays written about them. As a warning, THERE WILL BE SPOILERS if you follow those links.
+
+## Mathematics
+
+* Keith Nicholson - Linear Algebra with Applications
+
+* Robert A. Adams and Christopher Essex - Calculus: A Complete Course
+
+* Dennis D. Wackerly, William Mendenhall III, and Richard L. Scheaffer - Mathematical Statistics with Applications
+
+* James R. Brannan and William E. Boyce - Differential Equations: An Introduction to Modern Methods and Applications
+
+* Jack Goldberg and Merle C. Potter - Differential Equations: A Systems Approach
+
+* Steven R. Lay - Analysis: With an Introduction to Proof
+
+## Physics
+
+* Ruth W. Chabay and Bruce A. Sherwood - Matter and Interactions
+
+* Marc L. Kutner - Astronomy: A Physical Perspective
+
+* Grant R. Fowles and George L. Cassiday - Analytical Mechanics
+
+* Eugene Hecht - Optics
+
+* David J. Griffiths - Introduction to Electrodynamics
+
+* Walter Greiner, Ludwig Neise, and Horst Stocker - Thermodynamics and Statistical Mechanics
+
+* David J. Griffiths - Introduction to Quantum Mechanics
+
+* Ramamurti Shankar - Principles of Quantum Mechanics
+
+* Stephen Hawking - A Brief History of Time
+
+## Theology
+
+=> ../blog/bible_bins_home.gmi The Holy Bible NIV
+
+* Martin Luther - Martin Luther: Selections from His Writings
+
+* C. S. Lewis - The Chronicles of Narnia
+
+* C. S. Lewis - The Screwtape Letters
+
+* C. S. Lewis - Screwtape Proposes a Toast
+
+## Miscellaneous
+
+* George Orwell - Nineteen Eighty-Four
+
+* Aurelien Geron - Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow
+
+* Jordan Peterson - 12 Rules for Life
+
+=> projects_home.gmi Back to Projects
+=> ../index.gmi Home
