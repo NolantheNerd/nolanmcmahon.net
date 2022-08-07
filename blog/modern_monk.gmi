@@ -1,11 +1,3 @@
-```
-//      //                                       
- //  //    //////  //      //      //  //////    
-  //    //    //  //      //      //  //    //   
- //    //    //    //  //  //  //    //    //    
-//      //////      //      //      //    //     
-
-```
 => ../index.gmi Home
 
 # Tell Us About Yourself
@@ -32,13 +24,13 @@ This means that I do not:
 * Use Social Media
 * Use My Cell Phone
 * Play Video Games
-* Consume the News
+* Pay Any Attention to the News
 * Own a Television
 * Watch Sports
 * Subscribe to Television/Movie/Music Streaming Services
 * Go to Movie Theatres
 
-## I Don't Consume Most Food and Drink
+## I Don't Consume "Trendy" Foods and Drinks
 
 This means that I do not:
 
@@ -67,20 +59,81 @@ This means that I do not:
 
 # Why???
 
-That's a great question, and a very natural followup that I get after I make an my personal introduction to someone. In short, I recognize that each of the above activities have a cost associated with them, which I have decided is not worth the benefit that they provide.
+That's a great question, and a very natural followup that I get after I make my personal introduction to someone. In short, I recognize that each of the above activities have a cost associated with them, which I have decided is not worth the benefit that they provide.
 
 Let me be more specific, and discuss these on an abstention by abstention basis:
 
 ## Watch YouTube/Twitch
+
+Of all of my idiosyncrasies, this is perhaps the most difficult one for people to swallow. It's also really hard to talk about. Writing this piece has been quite a humbling experience, since I had to put into coherent words my relationship with YouTube and what my life was like before when I was using it. 
+
+Let me give you the whole story, then I'll address some common objections that I get about YouTube.
+
+### The Whole Story
+
+For many years of my life, I spent gargantuan amounts of time watching YouTube. At any given point during the day, if it was possible for me to watch YouTube, I would. For example, I would watch YouTube while:
+
+* Making Food
+* Eating Food
+* Using the Bathroom
+* Getting Ready for Work/School
+* Getting Ready for Bed
+* Talking to Friends Over the Internet
+* Playing Video Games
+
+Essentially, YouTube was the first thing that I opened when I woke up and the last thing that I closed before I went to bed. If I wasn't sleeping or actively working, I was watching YouTube.
+
+Over time, I generated some degree of cognitive dissidence towards YouTube. I would often have desires to accomplish things, but I found that I never actually got around to doing them because the only thing that I ever did was watch YouTube. And it wasn't even that I was really enjoying what I was consuming. I promise you that no matter how much good content there is on YouTube, there is infinitely more vapid, useless, boring, and mind numbing material on there. You'll quickly find that you'll burn through all of the good stuff and will be left scrolling through mounds of trash.
+
+At some point, I decided that YouTube was taking up too much of my time and I wanted to cut back. I started by making rules for myself about how much YouTube I could watch and when I could watch it. "Not while I'm eating, and not too late in the evening", or "'Only' two hours a day." I flip flopped several times with different self-imposed rules, but I always inevitably fell back into heavy YouTube usage. I was completely stuck in my habit and there was no series of mental gymnastic tricks that I could use to fish myself out.
+
+Skip ahead to the middle of 2021; I was once again using YouTube with no self-imposed restrictions and was no better off than I had ever been before. It was around that time that I was reading in Matthew, in Jesus' Sermon on the Mount about how to deal with temptation: "If your right eye causes you to stumble, gouge it out and throw it away. It is better for you to lose one part of your body than for your whole body to be thrown into hell. And if your right hand causes you to stumble, cut it off and throw it away. It is better for you to lose one part of your body than for your whole body to go into hell." [Matthew 5:29-30] In light of that advice, I decided to treat my relationship with YouTube for what it was: an addiction that I needed to cut out of my life entirely.
+
+What does that mean? It means that I blocked YouTube on my phone, and on all of my computers. I forbade and prohibited myself from visiting it whatsoever. This was a drastic step, as at the time I felt as though going cold turkey was simply an impossibility. In an effort to increase my chances of success, I opened up Twitch to myself to help me "get off" YouTube. I found Twitch to be much less interesting than YouTube, but it worked to fill the long, silent void left by YouTube's departure. I started watching some different Twitch streamers, but I did what I could to only watch live streams (as opposed to prerecorded stream replays) as those where less like the edited, curated, and addicting YouTube videos that I was used to.
+
+In those initial weeks, my YouTube consumption tendencies were strong. My default "NPC idle animation" was to plop down at my desk, open a browser, and type: "y<Enter>" which would autocomplete to "youtube.com" and take me to my curated homepage. I realized that this behaviour was as effortless as grabbing food out of the fridge when I was hungry: it took absolutely no thought, and was done before I realized that I was even doing it.
+
+After two weeks or so, I found myself reflexively trying to navigate to YouTube less and less and Twitch was helping to fill the enormous gap. However, I knew that fully replacing YouTube with Twitch was no real improvement. Thankfully, for whatever reason, I found Twitch to be far less addicting. So, after a couple of months, I cut Twitch off as well, in the same way as I did YouTube: all at once. In place of that, I found one particular self-hosted video site that contained videos that were created by one guy. The key is that it was a very finite supply of video content. Once I had seen them all, that was it. Needless to say, I've watched most of his videos many many times, but they didn't have the same grab as YouTube once did.
+
+I have just recently cut that limited video source out of my life as well. I am now finally and totally free of my video consumption addiction!
+
+The journey that I have made was not perfectly clean; there were times that I fell back into YouTube for a day or two, and then quickly put the blockers back up when I realized that I had fallen off the rails. I now, however, consider myself to be stable. I don't reflexively open up YouTube, and I have much more control over what and when I watch. However, I don't think I can ever go back to watching YouTube, even in some limited capacity. I see myself like a recovering alcoholic. I'm no longer in the bar every night, or drinking myself silly at home, but if I even touch a drink with friends, I'll find myself right back where I started so fast it'll make my head spin. That's fine. There's so much to do and accomplish in life beyond watching YouTube. My freedom is definitely worth the cost.
+
+### Common Objections I Get
+
+* What?! No YouTube? You just mean that you watch drastically less of it than you used to right?
+
+Nope, you heard right! No YouTube. None. At all. I'm not just trying to socially signal, or exaggerate my behaviour. I seriously watch NO YOUTUBE.
+
+* What about YouTube Music? Are you against that too?
+
+As far as I'm concerned, YouTube Music is the same thing as YouTube, and as such, I don't use it at all. I talk more about my relationship to streaming services for music and the like below.
+
+* What about the good content on YouTube? It's not all bad you know, some of it is downright fantastic!
+
+That's true! There is a lot of great content on YouTube. Plenty of videos that are genuinely funny, informative, well constructed, and/or entertaining. The reason I quit YouTube is not because there wasn't any good content there. I quit because it was taking up far too much of my time, and served as a ball and chain around my neck. As shocking as it may seem, not knowing about and not seeing the cream of the video crop is a sacrifice that is worth making for me because I am no longer a slave to YouTube and it's endless droning in my mind all day long. I won't see the latest and greatest video, but I also will have the freedom to choose how I spend my time.
+
+* Why can't you just watch the good stuff and then stop?
+
+Great question. I wish I could. The psychological manipulation that Google has implemented into the YouTube algorithm is so strong that I have never been able to successfully resist it. That sounds like an admission of weakness, but I think that that realization and its externalization into my behaviour is actually just an admission of my limitations. There are certain things in life that I simply cannot handle, so I have to go without.
+
+* So what you're saying is that you just don't like YouTube?
+
+Not at all, in fact, if anything, I like it far too much. I like it so much that watching it is my default behaviour.
+
+* Can I just send you this one YouTube link? It's so funny/informative/well done that it'll be worth it. You don't have to watch it on your computer, since you have YouTube blocked, you can just come and watch it with me on my computer!
+
+*sigh* Sure; you can send me the link, but I won't watch it. I'll lie and tell you I watched it, since you clearly don't understand my position and trying to explain it again will do nothing but cause further tension in our relationship. If you drag me over to your screen, I will very reluctantly watch it with you, but I will be suffering the entire time, not laughing, or learning, or being entertained. You are compelling me to partake in an indulgence that I know will cause me harm. I'll spend the entire time doing my best not to pay too much attention to it and not to get too engrossed in it. If you value our relationship, PLEASE don't try to force me to watch YouTube. I know that it is hard to understand my position. Know that I'm not just saying that I quit YouTube to get attention, or brownie points, or to socially signal my moral superiority. I don't consider myself morally superior to you at all (especially after writing this particularly embarrassing piece). I genuinely do not watch YouTube. It is genuinely better for me not to watch it at all, in any capacity.
+
 ## Use Social Media
 ## Use My Cell Phone
 ## Play Video Games
-## Consume the News
+## Pay Any Attention to the News
 ## Own a Television
 
 ## Watch Sports
 
-Sports seem to be the modern tribal game that humans play. We arbitrarily choose sides, then demonize those who arbitrarily chose differently from us. If our team loses, we flip out and vandalize our cities. We get so invested in the minutiae of the sport that we form extremely strong opinions about things that we have no control over, like which player is drafted by which team and how much they get paid.
+Sports seem to be the modern tribal game that humans play. We arbitrarily choose sides, then demonize those who arbitrarily chose differently from us. If our team loses, we flip out and vandalize our cities. We get so invested in the minutiae of the sport that we form extremely strong opinions about things that we have no control over, like which player should be drafted by which team and how much they should get paid.
 
 All of this just seems to me to be a toxic combination for body, mind, and soul. I have no desire to participate in that madness, so I don't watch sports.
 

@@ -18,7 +18,7 @@ I hold a number of different views about a wide variety of topics. Some are pret
 
 I'm pretty unusual in that I shun many very normal aspects of modern life. Using social media, eating out at restaurants, and traveling the world are activities that, in general, I don't participate in. If my Luddism is of interest to you, check out this link!
 
-=> ./modern_monk.gmi Modern Luddism Portal
+=> ./modern_monk.gmi Modern Luddism
 
 ## Christianity
 
