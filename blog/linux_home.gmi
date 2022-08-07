@@ -15,6 +15,7 @@
 => linux/keyboard_mouse.gmi Keyboard Shortcuts and Hiding the Mouse Cursor (sxhkd/unclutter)
 => linux/dictionary.gmi Dictionary & Thesaurus (sdcv)
 => linux/text.gmi Text Editor (vim)
+=> linux/document_viewer.gmi Document Viewer (zathura)
 => linux/budgeting.gmi Budgeting Software (ledger)
 => linux/video.gmi Video Player (mpv/youtube-dl)
 

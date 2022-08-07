@@ -1,0 +1,68 @@
+=> ../../index.gmi Home
+
+# Document Viewer
+
+=> ../blog_home.gmi Back to Blog
+=> ../linux_home.gmi Back to the Software I Use
+
+Another one of the primary functions of a computer is to view documents. I have sincere sympathy for those who believe that Adobe Reader is the only way to view PDF documents. What an absolutely terrible program! I, of course, use an amazing PDF viewer which is completely free and works infinitely better than anything Adobe will ever produce: Zathura.
+
+## Installation
+
+On Arch GNU/Linux:
+
+> sudo pacman -S zathura
+
+Zathura is broken up into a number of subprograms. The main one (zathura) is just a shell that can't read anything! If you want to be able to view documents, you have to install the appropriate extension for Zathura. So, for example, I want to be able to view both PDF documents and PS (PostScript) documents, so I install the appropriate extensions:
+
+### PDF
+
+With an MUPDF backend:
+
+> sudo pacman -S zathura-pdf-mupdf
+
+or with a Poppler backend:
+
+> sudo pacman -S zathura-pdf-poppler
+
+### PostScript
+
+> sudo pacman -S zathura-ps
+
+### DjVu
+
+> sudo pacman -S zathura-djvu
+
+### Comic Book Format
+
+> sudo pacman -S zathura-cb
+
+## Usage
+
+Zathura uses Vim keybinds for document viewing. That means:
+
+* j - scrolls down
+* k - scrolls up
+* l - scrolls right
+* h - scrolls left
+* Ctrl + u - scroll half page up
+* Ctrl + d - scroll half page down
+* gg - scroll to top
+* G - scroll to bottom
+* s - zoom to 100% width
+* a - zoom to 100% height
+* = - zoom to 100%
+* + - zoom in
+* - - zoom out
+* Ctrl + r - toggle invert colours (to enable dark mode)
+* d - toggle dual page view
+* r - rotate clockwise 90 degrees
+* f - show link hints (then type link code and press <Enter> to follow link)
+* / - start full text search
+* n - go to next text search match
+* N - go to previous text search match
+
+Zathura is lightning fast, powerful, and extensible - everything that a document viewer should be!
+
+=> ../linux_home.gmi Back to the Software I Use
+=> ../blog_home.gmi Back to Blog
