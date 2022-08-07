@@ -17,11 +17,11 @@ I spend the vast majority of my time on a computer editing text. Whether I'm con
 * Text files do not take up much storage space.
 * Text files are far more persistent through time. Proprietary and/or complex file types will come and go but plain text will always be readable.
 
-Since I spend such a considerable amount of time editing text, I want to be able to edit text as efficiently as possible. Thus, I've made vim my text editor.
+Since I spend such a considerable amount of time editing text, I want to be able to edit text as efficiently as possible. Thus, I've made Vim my text editor.
 
 ### Side Note
 
-For quite a while, I used neovim as my text editor which is marketed to be "just like vim, but better". I spent a considerable amount of time with neovim, but I really couldn't discern any differences between it and vim. Now I'm not particularly motivated to use a new piece of technology just because it's vaguely "better" so I've switched back to vim proper. If however, you have some list of reasons why neovim is undeniably the superior program and should unequivocally replace regular ol' vim, shoot me an email. I'd love to hear your motivations.
+For quite a while, I used neovim as my text editor which is marketed to be "just like vim, but better". I spent a considerable amount of time with neovim, but I really couldn't discern any differences between it and vim. Now I'm not particularly motivated to use a new piece of technology just because it's vaguely "better" so I've switched back to Vim proper. If however, you have some list of reasons why neovim is undeniably the superior program and should unequivocally replace regular ol' vim, shoot me an email. I'd love to hear your motivations.
 
 ## Installation
 
@@ -35,15 +35,15 @@ If you already know how to use vim, the first thing you'll want to do is to star
 
 => docs/vimrc.txt My .vimrc
 
-Otherwise, for those who don't already know how to use vim, let me explain. Vim's settings are stored in a file called .vimrc in your home directory. Vim loads this file each time it starts and applies each setting you specify here to the new vim environment. I, for example, like to have the lines of my files numbered when I'm viewing or editing them, so I have:
+Otherwise, for those who don't already know how to use vim, let me explain. Vim's settings are stored in a file called .vimrc in your home directory. Vim loads this file each time it starts and applies each setting you specify here to the new Vim environment. I, for example, like to have the lines of my files numbered when I'm viewing or editing them, so I have:
 
 > set number
 
-in my .vimrc. There are many, many more available settings for you to play with in vim but if you are not familiar with how vim works yet, skip down to the usage section. No need to configure settings before you understand the basics of using vim.
+in my .vimrc. There are many, many more available settings for you to play with in Vim but if you are not familiar with how Vim works yet, skip down to the usage section. No need to configure settings before you understand the basics of using vim.
 
 ### Plugins
 
-Another way to modify vim is to use vim extensions. If you aren't aware, you can extend vim with other features that are not built in by default using so called plugins. These plugins are generally written in Vim Script and can be managed using a plugin manager like vim-plug.
+Another way to modify Vim is to use Vim extensions. If you aren't aware, you can extend Vim with other features that are not built in by default using so called plugins. These plugins are generally written in Vim Script and can be managed using a plugin manager like vim-plug.
 
 => https://github.com/junegunn/vim-plug vim-plug GitHub Page
 
@@ -57,7 +57,7 @@ This creates a directory in your home directory called .vim where all of your ex
 > 	Plug 'github_repo_for_plugin'
 > call plug#end()
 
-to your .vimrc to add plugins to your vim environment. Among others, I use:
+to your .vimrc to add plugins to your Vim environment. Among others, I use:
 
 => https://github.com/sheerun/vim-polyglot sheerun/vim-polyglot
 => https://github.com/petRUShka/vim-sage petRUShka/vim-sage
@@ -73,7 +73,7 @@ To install/update these plugins after adding them to your .vimrc:
 > :PlugInstall
 > :PlugUpdate
 
-I use one vim plugin which is not compatible with vim-plug called gemini-vim-syntax. You can find it here along with instructions on how to install it:
+I use one Vim plugin which is not compatible with vim-plug called gemini-vim-syntax. You can find it here along with instructions on how to install it:
 
 => https:/tildegit.org/sloum/gemini-vim-syntax gemini-vim-syntax
 
@@ -91,11 +91,11 @@ inserts a 2x3 augmented matrix formatted using eqn syntax. If I'm in insert mode
 
 ## Usage
 
-If you've never used vim before, you'll want to get some instructions on the basics. Open up a terminal and type:
+If you've never used Vim before, you'll want to get some instructions on the basics. Open up a terminal and type:
 
 > vimtutor
 
-This will guide you through the basics of vim quite nicely.
+This will guide you through the basics of Vim quite nicely.
 
 => ../linux_home.gmi Back to the Software I Use
 => ../blog_home.gmi Back to Blog
