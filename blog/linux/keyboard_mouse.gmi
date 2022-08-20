@@ -51,7 +51,7 @@ sxhkd's syntax is straight forward and makes it really easy to bind key combinat
 
 Checkout my entire sxhkdrc file for both my custom keybinds as well as those that control my window manager: bspwm.
 
-=> docs/sxhkdrc My sxhkdrc File
+=> docs/sxhkdrc.txt My sxhkdrc File
 
 # Remapping Keys
 
@@ -74,7 +74,7 @@ I use a script, which is based on the one Luke Smith has in Voidrice, to remap:
 
 I call this script from within my .xinitrc file.
 
-=> docs/xinitrc My xinitrc File
+=> docs/xinitrc.txt My xinitrc File
 
 > #!/bin/sh
 > 
@@ -88,7 +88,7 @@ I call this script from within my .xinitrc file.
 > # Turn off the caps lock if on since there is no longer a key for it.
 > xset -q | grep "Caps Lock:\s*on" && xdotool key Caps_Lock
 
-=> docs/remapesc Remap Script
+=> docs/remapesc.txt Remap Script
 
 I used to use a different version of that script which also made Caps Lock behave like Super if it was held down and another key was pressed at the same time. I got tired of accidentally opening a different program when switching from Insert Mode to Normal Mode in Vim, so I removed that feature, but the script that does that is here:
 
@@ -107,7 +107,7 @@ I used to use a different version of that script which also made Caps Lock behav
 > # Turn off the caps lock if on since there is no longer a key for it.
 > xset -q | grep "Caps Lock:\s*on" && xdotool key Caps_Lock
 
-=> docs/remap Remap Script
+=> docs/remap.txt Remap Script
 
 # Hiding the Mouse
 

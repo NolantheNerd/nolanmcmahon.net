@@ -70,7 +70,7 @@ Every dollar is accounted for! It's clear where every dollar came from and where
 
 There are many many other features built into ledger that I haven't touched on. For example, there is a feature that allows you to graphically see how your account balances have changed over time. If you are interested in learning more about ledger, including how to view report plots, check out the manual! (The plotting function is described in section 6.4.2.)
 
-=> docs/report Ledger Reporting Script
+=> docs/report.txt Ledger Reporting Script
 => docs/ledger3.pdf Ledger Manual
 
 => ../linux_home.gmi Back to the Software I Use
