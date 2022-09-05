@@ -4,7 +4,7 @@
   //////    //  //    //  //  ////////
  //    //  //  //    //  //  //       
 //////    //  //////    //    //////  
-
+                                                                                
 ```
 => ../../index.gmi Home
 
@@ -21,6 +21,8 @@ Coming Soon!
 ## All Bible Bins
 
 => bible_bins/awesomeness_of_God.gmi Awesomeness of God
+=> bible_bins/christian_living.gmi Christian Living
+=> bible_bins/end_times_prophesy.gmi End Times Prophesy
 => bible_bins/failure_of_salvation_by_works.gmi Failure of Salvation by Works
 => bible_bins/faith.gmi Faith
 => bible_bins/faith_of_the_early_church.gmi Faith of the Early Church
@@ -32,6 +34,8 @@ Coming Soon!
 => bible_bins/how_God_works.gmi How God Works
 => bible_bins/human_failings.gmi Human Failings
 => bible_bins/the_law.gmi The Law
+=> bible_bins/love.gmi Love
+=> bible_bins/meaning_of_life.gmi The Meaning of Life
 => bible_bins/money.gmi Money
 => bible_bins/pride.gmi Pride
 => bible_bins/prophesy_of_Christ.gmi Prophesy of Christ
