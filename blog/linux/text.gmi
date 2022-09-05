@@ -75,7 +75,7 @@ To install/update these plugins after adding them to your .vimrc:
 
 I use one Vim plugin which is not compatible with vim-plug called gemini-vim-syntax. You can find it here along with instructions on how to install it:
 
-=> https:/tildegit.org/sloum/gemini-vim-syntax gemini-vim-syntax
+=> https://tildegit.org/sloum/gemini-vim-syntax gemini-vim-syntax
 
 ### Macros
 
