@@ -21,6 +21,7 @@ Coming Soon!
 ## All Bible Bins
 
 => bible_bins/awesomeness_of_God.gmi Awesomeness of God
+=> bible_bins/christian_church.gmi Christian Church
 => bible_bins/christian_living.gmi Christian Living
 => bible_bins/end_times_prophesy.gmi End Times Prophesy
 => bible_bins/failure_of_salvation_by_works.gmi Failure of Salvation by Works
