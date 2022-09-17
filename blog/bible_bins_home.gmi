@@ -1,0 +1,53 @@
+```
+    //////    //  //        //        
+   //    //      //////    //    //// 
+  //////    //  //    //  //  ////////
+ //    //  //  //    //  //  //       
+//////    //  //////    //    //////  
+                                                                                
+```
+=> ../../index.gmi Home
+
+# What's a Bible Bin?
+
+=> ./blog_home.gmi Back to Blogs
+
+God speaks to us through his holy, divinely inspired word: the Bible. It can be hard to keep track of all the stories, verses, and teachings that are relevant to all the various topics in the Word, hence this reference. A bin is a category which is supported by verses/stories from the Bible. This is an ever expanding list.
+
+## Our Favourite Bin Points
+
+Coming Soon!
+
+## All Bible Bins
+
+=> bible_bins/awesomeness_of_God.gmi Awesomeness of God
+=> bible_bins/christian_church.gmi Christian Church
+=> bible_bins/christian_living.gmi Christian Living
+=> bible_bins/end_times_prophesy.gmi End Times Prophesy
+=> bible_bins/failure_of_salvation_by_works.gmi Failure of Salvation by Works
+=> bible_bins/faith.gmi Faith
+=> bible_bins/faith_of_the_early_church.gmi Faith of the Early Church
+=> bible_bins/God_is_sovereign.gmi God is Sovereign
+=> bible_bins/Gods_use_of_lowly_people.gmi God's Use of Lowly People
+=> bible_bins/the_golden_rule.gmi Golden Rule
+=> bible_bins/greed.gmi Greed
+=> bible_bins/heaven.gmi Heaven
+=> bible_bins/how_God_works.gmi How God Works
+=> bible_bins/human_failings.gmi Human Failings
+=> bible_bins/the_law.gmi The Law
+=> bible_bins/love.gmi Love
+=> bible_bins/meaning_of_life.gmi The Meaning of Life
+=> bible_bins/money.gmi Money
+=> bible_bins/pride.gmi Pride
+=> bible_bins/prophesy_of_Christ.gmi Prophesy of Christ
+=> bible_bins/questions_for_a_theologian.gmi Questions for a Theologian
+=> bible_bins/revenge.gmi Revenge
+=> bible_bins/salvation.gmi Salvation
+=> bible_bins/satan.gmi Satan
+=> bible_bins/sin.gmi Sin
+=> bible_bins/suffering.gmi Suffering
+=> bible_bins/symbols.gmi Symbols
+=> bible_bins/temptation.gmi Tempation
+=> bible_bins/wisdom.gmi Wisdom
+
+=> ./blog_home.gmi Back to Blogs
