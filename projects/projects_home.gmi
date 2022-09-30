@@ -38,4 +38,4 @@ As such, I've started a new version of this project which learns from the mistak
 
 If you are curious about how my model works, check out it's project page.
 
-LINK COMING SOON!
+=> dm.gmi Disease Model (dm)
