@@ -1,0 +1,27 @@
+=> ../../index.gmi Home
+
+# Image Viewer
+
+=> ../blog_home.gmi Back to Blog
+=> ../linux_home.gmi Back to the Software I Use
+
+Viewing images is one of the basic functions of a computer. I like to keep it simple, so I use sxiv (Simple X Image Viewer).
+
+## Installation
+
+On Arch GNU/Linux:
+
+> sudo pacman -S sxiv
+
+## Usage
+
+sxiv is really easy to use. In a terminal just type:
+
+> sxiv your_image_file
+
+And the image will pop up. There is also a thumbnail mode, which gives you an interactive gallery view that you can navigate through and choose individual images to look at. Access it with:
+
+> sxiv -t directory_full_of_images
+
+=> ../linux_home.gmi Back to the Software I Use
+=> ../blog_home.gmi Back to Blog

@@ -18,6 +18,7 @@
 => linux/document_viewer.gmi Document Viewer (zathura)
 => linux/budgeting.gmi Budgeting Software (ledger)
 => linux/video.gmi Video Player (mpv/youtube-dl)
+=> linux/image.gmi Image Viewer (sxiv)
 
 => blog_home.gmi Back to Blog
 
