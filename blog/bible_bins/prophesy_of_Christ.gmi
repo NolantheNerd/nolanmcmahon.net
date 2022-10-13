@@ -12,7 +12,7 @@
 In Jacob's blessing of Judah, he mentions that "the scepter will not depart from Judah ... until he to whom it belongs shall come and the obedience of the nations shall be his."
 
 > The scepter will not depart from Judah, nor the ruler's staff from between his feet,
-> until he to whom it belongs shall come and the obedience of the nations shall be his. - Genesis 49:18
+> until he to whom it belongs shall come and the obedience of the nations shall be his. - Genesis 49:10
 
 ## God's Promise to David
 
@@ -68,6 +68,12 @@ God promises through Malachi that the prophet Elijah will come before Christ. Th
 > See, I will send the prophet Elijah to you before that great and dreadful day of the Lord comes. - Malachi 4:5
 
 > For all the Prophets and the Law prophesied until John. And if you are willing to accept it, he is the Elijah who was to come. Whoever has ears, let them hear. - Matthew 11:13-15
+
+## Christ was Prophesied from to Abram from the Beginning
+
+God tells Abram that his descendants will be a blessing to all people. This may have been used by Paul and other apostles to justify to the Jews that Jesus' gift of grace was not only for the Jews but also for the Gentiles.
+
+> @@@ TODO Genesis 12:3 and Genesis 22:18 and Genesis 26:4
 
 => ../bible_bins_home.gmi Back to List of Bible Bins
 => ../blog_home.gmi Back to Blog Home
