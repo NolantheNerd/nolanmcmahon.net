@@ -73,7 +73,14 @@ God promises through Malachi that the prophet Elijah will come before Christ. Th
 
 God tells Abram that his descendants will be a blessing to all people. This may have been used by Paul and other apostles to justify to the Jews that Jesus' gift of grace was not only for the Jews but also for the Gentiles.
 
-> @@@ TODO Genesis 12:3 and Genesis 22:18 and Genesis 26:4
+> I will bless those who bless you,
+>     and whoever curses you I will curse;
+> and all peoples on earth
+>     will be blessed through you.” - Genesis 12:3
+
+> And through your offspring all nations on earth will be blessed, because you have obeyed me.” - Genesis 22:18
+
+> I will make your descendants as numerous as the stars in the sky and will give them all these lands, and through your offspring all nations on earth will be blessed, - Genesis 26:4
 
 => ../bible_bins_home.gmi Back to List of Bible Bins
 => ../blog_home.gmi Back to Blog Home
