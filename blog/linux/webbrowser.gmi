@@ -5,7 +5,7 @@
 => ../blog_home.gmi Back to Blog
 => ../linux_home.gmi Back to the Software I Use
 
-The modern web is stuffed to the brim with ads, trackers, Javascript, and bloated web apps, but there are still a few legitimate uses for it. Your web browser acts as a portal to both the brightest and darkest sides of humanity.
+The modern web is stuffed to the brim with ads, trackers, Javascript, and bloated web apps, but there are still a few legitimate uses for it. The web browser acts as a portal to both the brightest and darkest sides of humanity.
 
 # HTTP
 
@@ -61,7 +61,22 @@ On Arch GNU/Linux:
 
 ## Usage
 
-@@@ Todo
+amfora uses vim-like shortcuts:
+
+* j - scrolls down
+* k - scrolls up
+* d - scrolls down faster
+* u - scrolls up faster
+* g - go to the top
+* G - go to the bottom
+* l - scroll right
+* h - scroll left
+* q - quit amfora
+* ? - for a list of shortcuts
+
+### Link Selection
+
+The number keys 1-0 follow links labeled 1-10 on the page. To follow a link with a greater link number than that, press space first, then type the number and press enter. Space can also be used to go to other gemini capsules or to use the geminispace.info search engine!
 
 => ../linux_home.gmi Back to the Software I Use
 => ../blog_home.gmi Back to Blog
