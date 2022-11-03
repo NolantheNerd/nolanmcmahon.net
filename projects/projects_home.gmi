@@ -32,7 +32,7 @@ In 2020, when COVID-19 hit the world, everything shut down. There were concerns 
 
 This project is designed to address that question directly. I'm building a model of disease, with a large number of configurable parameters describing how the disease works and how the population responds to its existence. The goal is to satisfy my own curiosity about the spread of diseases and evaluate different responses to them. The project is 100% free software; you can check out the code from my git server.
 
-=> gemini://git.nolanmcmahon.net My Git Server
+=> gemini://git.nolanmcmahon.net Git Server
 
 I've already completed a version 1 of this model with Python, but I found the modelling to be insufficient to satisfy my curiosity. For one thing, the visualization process was way too slow. For another, many important parameters were not included.
 
