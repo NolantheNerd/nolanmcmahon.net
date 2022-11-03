@@ -9,4 +9,4 @@ Right now, dm is in the early stages of development, which means that it doesn't
 
 => docs/dm_spec.pdf dm Spec
 
-=> https://git.nolanmcmahon.net/dm/log.html Go to Git Repo
+=> git.nolanmcmahon.net Go to Git Repo
