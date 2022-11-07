@@ -1,0 +1,215 @@
+=> ../../index.gmi Home
+
+# Basic Arch Linux Install
+
+=> ../blog_home.gmi Back to Blog
+=> ../linux_home.gmi Back to the Software I Use
+
+Arch Linux is an OS which you need to install yourself. I've installed it several times on several different machines. This is the instruction guide that I follow. After following this, you should be able to boot and be greeted by a flashing cursor!
+
+## Installation
+
+1. You'll need a USB drive to store the Arch Linux ISO and serve as a bootable drive. Got to the Arch Linux website and download the latest ISO file from one of the mirrors. Last I checked it's ~700 MB.
+
+=> https://archlinux.org/download/ Arch Linux Download Page
+
+2. Put the ISO on the USB drive. If you are using Windows or MacOS, you may want to use Fedora's Media Writer. On Linux, use:
+```
+    dd if=(ISO LOCATION) of=/dev/(USB DRIVE) status="progress"
+```
+
+=> https://getfedora.org/en/workstation/download/ Fedora Media Writer
+
+3. Boot the machine you want to install Arch on from the USB. Usually you have to bash F2, F11, or F12 to choose the USB to boot from.
+
+4. Check to see if your computer has UEFI.
+```
+    ls /sys/firmware/efi/efivars
+```
+If the output of this command is:
+```
+    ls: cannot access '/sys/firmware/efi/efivars': No such file or directory
+```
+then you don't have UEFI and you can proceed with these installation instructions. Otherwise, you'll have to follow a UEFI installation guide. (The steps below will not work for you.)
+
+5. Make sure that you have an internet connection:
+```
+    ping nolanmcmahon.net
+```
+You should see that your machine is pinging 64 bytes per second to the domain you choose. Control-C will cancel this operation. If you are plugged into ethernet, you should have internet automatically. If you'd prefer to use WIFI:
+```
+    iwctl
+		device list
+```
+Note the name of your device and make sure that it isn't disabled or turned off.
+```
+    station (name of device) connect (name of WIFI network)
+```
+Enter your WIFI password when prompted. If ever you get stuck:
+```
+    iwctl
+		help
+```
+is your friend. (Also Control-D to exit the IWD prompt back to the BASH prompt.)
+
+6. Run:
+```
+    timedatectl set-ntp true
+```
+
+7. Find the name of the drive you want to install Arch on with:
+```
+    lsblk
+```
+It will probably be something like "sda", "sdb", or "nvme" something or other. Double check the drive size, make sure you pick the right one.
+
+8. Format the drive with:
+```
+    fdisk /dev/(drive name)
+```
+
+9. Delete all existing partitions. (This is as good a time as any to say that you will lose ALL data on your drive, so making a backup NOW would be prudent.) Do this using:
+```
+    d
+```
+repeatedly.
+
+10. Create a boot partition with:
+```
+    n
+```
+Make it primary if prompted, partition number default (should be 1), first sector default, and last sector use:
+```
+    +200M
+```
+If you are prompted to clear signatures, say yes.
+
+11. Create a swap partition with:
+```
+    n
+```
+Make it primary if prompted, partition number default (should be 2), first sector default, and last sector, make it 150% of your RAM capacity.
+```
+    +(amount)G
+```
+If you are prompted to clear signatures, say yes.
+
+12. Create a root partition with:
+```
+    n
+```
+Make it primary if prompted, partition number default (should be 3), first sector default, and last sector use:
+```
+    +25G
+```
+This is where all of your software will be installed. You can make it bigger if you like having lots of software installed. If you are prompted to clear signatures, say yes.
+
+13. Create a home partition with:
+```
+    n
+```
+Make it primary if prompted, partition number default (should be 1), first sector default, and last sector default. If you are prompted to clear signatures, say yes.
+
+14. Write changes with:
+```
+    w
+```
+
+15. Make ext4 filesystems on all but the swap partition with:
+```
+    mkfs.ext4 /dev/(name)1
+		mkfs.ext4 /dev/(name)3
+		mkfs.ext4 /dev/(name)4
+```
+
+16. Make your swap partition a swap partition:
+```
+    mkswap /dev/(name)2
+		swapon /dev/(name)2
+```
+
+17. Mount the root partition:
+```
+    mount /dev/(name)3 /mnt
+```
+
+18. Make directories to mount the other partitions to and mount them.
+```
+    mkdir /mnt/home /mnt/boot
+		mount /dev/(name)1 /mnt/boot
+		mount /dev/(name)4 /mnt/home
+```
+
+19. Install Arch Linux packages with:
+```
+    pacstrap /mnt base base-devel linux linux-firmware vim
+```
+
+20. Tell Linux how to mount your drives properly on boot with:
+```
+    genfstab -U /mnt >> /mnt/etc/fstab
+```
+
+21. Move to your install (and off of the USB) with:
+```
+    arch-chroot /mnt
+```
+
+22. I prefer to use Network Manager to handle my internet connection.
+```
+    pacman -S networkmanager
+		systemctl enable NetworkManager
+```
+
+23. Install the boot loader Grub:
+```
+    pacman -S grub
+		grub-install --target=i386-pc /dev/(name) --force
+		grub-mkconfig -o /boot/grub/grub.cfg
+```
+
+24. Make a password for the root user:
+```
+    passwd
+```
+
+25. Configure your locale.
+```
+    vim /etc/locale.gen
+```
+Uncomment the lines associated with your locale (like "en_CA.UTF-8 UTF-8" and "en_CA ISO-8859-1").
+```
+    locale-gen
+		vim /etc/locale.conf
+```
+Add your locale to the LANG variable, for example with the "en_CA" locale:
+```
+    LANG=en_CA.UTF-8
+```
+
+26. Set your timezone. Find all timezones with:
+```
+    ls /usr/share/zoneinfo/
+```
+Set it with:
+```
+    ln -sf /usr/share/zoneinfo/(YOUR TIME ZONE) /etc/localtime
+```
+
+27. Give your computer a host name:
+```
+    vim /etc/hostname
+```
+Make it one word at the top of this new file.
+
+28. Prepare to reboot. After your machine turns off, unplug the USB.
+```
+    exit
+		umount -R /mnt
+		reboot
+```
+
+You should now be prompted to login. You can do so with the username root and the password that you set before. Congratulations!
+
+=> ../linux_home.gmi Back to the Software I Use
+=> ../blog_home.gmi Back to Blog
