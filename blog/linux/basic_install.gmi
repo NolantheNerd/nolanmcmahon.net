@@ -39,7 +39,7 @@ then you don't have UEFI and you can proceed with these installation instruction
 You should see that your machine is pinging 64 bytes per second to the domain you choose. Control-C will cancel this operation. If you are plugged into ethernet, you should have internet automatically. If you'd prefer to use WIFI:
 ```
     iwctl
-		device list
+    device list
 ```
 Note the name of your device and make sure that it isn't disabled or turned off.
 ```
@@ -48,7 +48,7 @@ Note the name of your device and make sure that it isn't disabled or turned off.
 Enter your WIFI password when prompted. If ever you get stuck:
 ```
     iwctl
-		help
+    help
 ```
 is your friend. (Also Control-D to exit the IWD prompt back to the BASH prompt.)
 
@@ -118,14 +118,14 @@ Make it primary if prompted, partition number default (should be 1), first secto
 15. Make ext4 filesystems on all but the swap partition with:
 ```
     mkfs.ext4 /dev/(name)1
-		mkfs.ext4 /dev/(name)3
-		mkfs.ext4 /dev/(name)4
+    mkfs.ext4 /dev/(name)3
+    mkfs.ext4 /dev/(name)4
 ```
 
 16. Make your swap partition a swap partition:
 ```
     mkswap /dev/(name)2
-		swapon /dev/(name)2
+    swapon /dev/(name)2
 ```
 
 17. Mount the root partition:
@@ -136,8 +136,8 @@ Make it primary if prompted, partition number default (should be 1), first secto
 18. Make directories to mount the other partitions to and mount them.
 ```
     mkdir /mnt/home /mnt/boot
-		mount /dev/(name)1 /mnt/boot
-		mount /dev/(name)4 /mnt/home
+    mount /dev/(name)1 /mnt/boot
+    mount /dev/(name)4 /mnt/home
 ```
 
 19. Install Arch Linux packages with:
@@ -158,14 +158,14 @@ Make it primary if prompted, partition number default (should be 1), first secto
 22. I prefer to use Network Manager to handle my internet connection.
 ```
     pacman -S networkmanager
-		systemctl enable NetworkManager
+    systemctl enable NetworkManager
 ```
 
 23. Install the boot loader Grub:
 ```
     pacman -S grub
-		grub-install --target=i386-pc /dev/(name) --force
-		grub-mkconfig -o /boot/grub/grub.cfg
+    grub-install --target=i386-pc /dev/(name) --force
+    grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
 24. Make a password for the root user:
@@ -180,7 +180,7 @@ Make it primary if prompted, partition number default (should be 1), first secto
 Uncomment the lines associated with your locale (like "en_CA.UTF-8 UTF-8" and "en_CA ISO-8859-1").
 ```
     locale-gen
-		vim /etc/locale.conf
+    vim /etc/locale.conf
 ```
 Add your locale to the LANG variable, for example with the "en_CA" locale:
 ```
@@ -205,8 +205,8 @@ Make it one word at the top of this new file.
 28. Prepare to reboot. After your machine turns off, unplug the USB.
 ```
     exit
-		umount -R /mnt
-		reboot
+    umount -R /mnt
+    reboot
 ```
 
 You should now be prompted to login. You can do so with the username root and the password that you set before. Congratulations!
