@@ -49,7 +49,7 @@ I've organized the books that I have into rough categories based on topic. Books
 
 * C. S. Lewis - The Chronicles of Narnia
 
-=> ../library/screwtape_letters.gmi (⛤ ⛤ ⛤ ⛤ ⛤) C. S. Lewis - The Screwtape Letters
+=> ./library/screwtape_letters.gmi (⛤⛤⛤⛤⛤) C. S. Lewis - The Screwtape Letters
 
 * C. S. Lewis - Screwtape Proposes a Toast
 
