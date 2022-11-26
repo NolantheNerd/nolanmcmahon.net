@@ -6,8 +6,12 @@ Microsoft Windows and Apple MacOS are both malware and spyware. They slow down o
 
 ## Software
 
-=> linux/basic_install.gmi Basic Arch Linux Installation
-=> linux/making_arch_usable.gmi Making Arch Linux More Usable
+### Arch Linux OS Install
+
+=> linux/basic_install.gmi Basic Arch Linux Installation (The Basics)
+=> linux/making_arch_usable.gmi Making Arch Linux More Usable (X-Org/yay/man/fonts/autorandr)
+
+### Programs
 
 => linux/keyboard_mouse.gmi Keyboard Shortcuts and Hiding the Mouse Cursor (sxhkd/unclutter)
 => linux/webbrowser.gmi Browsing the Internet (qutebrowser/amfora)
