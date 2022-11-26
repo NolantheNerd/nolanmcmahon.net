@@ -1,0 +1,63 @@
+=> ../../index.gmi Home
+
+# Document Creation
+
+=> ../blog_home.gmi Back to Blog
+=> ../linux_home.gmi Back to the Software I Use
+
+One of the primary functions of a computer is to typeset documents. There are many programs out there designed for this very purpose, ranked in increasing order of minimalism:
+
+* Google Docs
+* Microsoft Word
+* LibreOffice Writer
+* LaTeX
+* groff
+
+I used LaTeX entensively through my university career to typeset my assignments, all of which were math heavy. It did a great job. However, I've recently switched to groff for all my document creation needs. It's faster than LaTeX to compile, and it's syntax is superior (in my opinion). It does lack the general acceptance that LaTeX has, but that just makes it more rewarding when you figure something out on your own!
+
+## Installation
+
+On Arch GNU/Linux, it's part of the base-devel package group. If you installed base-devel when you first installed Arch, you already have groff! If not:
+
+> sudo pacman -S groff
+
+## Usage
+
+Groff comes with a number of different macro packages that help to create documents. The two big ones for general purpose documents are the MS macros and the MOM macros. I personally use the MS macros. There is not a large amount of documentation out there for groff, but I've included a couple of great resources below for both groff, and one of it's preprocessors, eqn, which I use frequently to format math equations! Here's a "Hello World" example document:
+
+.NH
+Heading 1
+.PP
+This is a paragraph of text. Hello world!
+.RS
+.IP \(bu 3
+Hello
+.IP \(bu 3
+World!
+.RE
+
+If you compile that content with:
+
+> groff -ms content.ms > document.pdf
+
+you will have created your very first Groff document!
+
+=> docs/groff.pdf Groff Manual
+=> docs/eqn.ps EQN Preprocessor Manual
+
+### Code Snippets
+
+At times, I want to include code snippets (syntax highlighting and all) into my groff documents! I found a wonderful utility on GitHub that lets me do this called groffhl.
+
+> yay -S groffhl
+
+You'll also need highlight to colour the code to begin with:
+
+> sudo pacman -S highlight
+
+Then, I wrote a script that highlights my code snippet, cleans up the result a bit, and pipes it into my clipboard:
+
+> hightlight -O truecolor -S python "$@" | groffhl | sed 's/\.defcolor.*//' | sed '/^[[:space:]]*$/d' | xclip -selection clipboard
+
+=> ../linux_home.gmi Back to the Software I Use
+=> ../blog_home.gmi Back to Blog

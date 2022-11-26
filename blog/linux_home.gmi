@@ -14,6 +14,7 @@ Microsoft Windows and Apple MacOS are both malware and spyware. They slow down o
 => linux/dictionary.gmi Dictionary & Thesaurus (sdcv)
 => linux/text.gmi Text Editor (vim)
 => linux/document_viewer.gmi Document Viewer (zathura)
+=> linux/document_creation.gmi Document Creation (groff)
 => linux/budgeting.gmi Budgeting Software (ledger)
 => linux/video.gmi Video Player (mpv/youtube-dl)
 => linux/image.gmi Image Viewer (sxiv)
