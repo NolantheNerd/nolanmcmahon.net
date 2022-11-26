@@ -1,6 +1,6 @@
 => ../../index.gmi Home
 
-# Joel on Software: And on Diverse and Occasionally RElated Matters That Will Prove of Interest to Software Developers, Designers, and Managers, and to Those Who, Whether by Good Fortune or Ill Luck, Work with Them in Some Capacity - Joel Spolsky
+# Joel on Software: And on Diverse and Occasionally Related Matters That Will Prove of Interest to Software Developers, Designers, and Managers, and to Those Who, Whether by Good Fortune or Ill Luck, Work with Them in Some Capacity - Joel Spolsky
 
 => ../library.gmi Back to Library
 
