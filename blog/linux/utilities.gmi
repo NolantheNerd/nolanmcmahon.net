@@ -1,0 +1,53 @@
+=> ../../index.gmi Home
+
+# Utilities
+
+=> ../blog_home.gmi Back to Blog
+=> ../linux_home.gmi Back to the Software I Use
+
+There are a variety of smaller utility programs that I use from time to time. In no particular order:
+
+## System Performance Monitor
+
+### Installation
+
+On Arch GNU/Linux:
+
+> sudo pacman -S btop
+
+### Usage
+
+Run:
+
+> btop
+
+Most of the keyboard shortcuts are made obvious through the UI.
+
+## File Transfer
+
+### Installation
+
+On Arch GNU/Linux:
+
+> sudo pacman -S rsync
+
+### Usage
+
+I use rsync to manage my website's files. For example:
+
+> rsync -rtvzP my_file remote_location
+
+### Calculator
+
+### Installation
+
+On Arch GNU/Linux:
+
+> sudo pacman -S calc
+
+### Usage
+
+Calc works as you might expect: +, -, *, /, ** are used for addition, subtraction, multiplication, division, and exponentiation respectively.
+
+=> ../linux_home.gmi Back to the Software I Use
+=> ../blog_home.gmi Back to Blog
