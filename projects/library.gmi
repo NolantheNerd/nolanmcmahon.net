@@ -7,6 +7,18 @@ As a child, I was never that motiviated to read. Retrospectively, that was a dir
 
 I've organized the books that I have into rough categories based on topic. Books accompanied by a link have my review, thoughts, or related essays written about them. As a warning, THERE WILL BE SPOILERS if you follow those links.
 
+## Theology
+
+=> ../blog/bible_bins_home.gmi The Holy Bible NIV
+
+* Martin Luther - Martin Luther: Selections from His Writings
+
+* C. S. Lewis - The Chronicles of Narnia
+
+=> ./library/screwtape_letters.gmi C. S. Lewis - The Screwtape Letters
+
+* C. S. Lewis - Screwtape Proposes a Toast
+
 ## Mathematics
 
 * Keith Nicholson - Linear Algebra with Applications
@@ -41,27 +53,19 @@ I've organized the books that I have into rough categories based on topic. Books
 
 * Stephen Hawking - A Brief History of Time
 
-## Theology
-
-=> ../blog/bible_bins_home.gmi The Holy Bible NIV
-
-* Martin Luther - Martin Luther: Selections from His Writings
-
-* C. S. Lewis - The Chronicles of Narnia
-
-=> ./library/screwtape_letters.gmi C. S. Lewis - The Screwtape Letters
-
-* C. S. Lewis - Screwtape Proposes a Toast
-
-## Miscellaneous
-
-* George Orwell - Nineteen Eighty-Four
+## Computer Science
 
 * Aurelien Geron - Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow
 
-* Jordan Peterson - 12 Rules for Life
-
 => ./library/joel_on_software.gmi Joel Spolsky - Joel on Software: And on Diverse and Occasionally Related Matters That Will Prove of Interest to Software Developers, Designers, and Managers, and to Those Who, Whether by Good Fortune or Ill Luck, Work with Them in Some Capacity
+
+## Miscellaneous Fiction
+
+* George Orwell - Nineteen Eighty-Four
+
+## Miscellaneous Non-Fiction
+
+* Jordan Peterson - 12 Rules for Life
 
 * Pekka Himanen - The Hacker Ethic and the Spirit of the Information Age
 
