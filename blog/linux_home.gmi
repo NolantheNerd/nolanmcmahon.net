@@ -2,6 +2,8 @@
 
 # Linux and BSD
 
+=> ./blog_home.gmi Back to Blog
+
 Microsoft Windows and Apple MacOS are both malware and spyware. They slow down over time, they prevent me from configuring my computer system the way that I want to, and they report back to an uncountably large number of different people all about the activities that are undertaken on them. As such, Linux and BSD are the only viable options for me. Right now I'm rolling with Arch Linux, since it gives me a lot of freedom to build my system from the ground up, they way I want. Below is a list of programs that I use on my computer.
 
 ## Software
