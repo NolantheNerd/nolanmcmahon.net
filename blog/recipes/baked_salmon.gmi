@@ -1,0 +1,38 @@
+=> ../../index.gmi Home
+
+# Baked Salmon (40 minutes)
+
+=> ../blog_home.gmi Back to Blog Home
+=> ../cooking_home.gmi Back to Recipes
+
+=> imgs/baked_salmon.jpg Doesn't This Look Delicious?
+
+## Ingredients:
+
+* 1 Large Salmon Fillet
+* 4 Tbsp Butter/Margarine
+* 3 Tsp Minced Garlic
+* 1 Tbsp Onion Powder
+* 1 Tbsp Paprika
+* 3 Tbsp Parsley
+* 3 Tbsp Basil
+* 1/2 Tsp Salt
+* 1 Tsp Pepper
+* 2 Tbsp Lemon Juice
+
+## Preparation:
+
+* Preheat Oven to 400°F
+
+## Directions:
+
+* Combine butter and spices (but not lemon juice) in a small pot.
+* Heat spice mixture on medium heat until butter is melted, stirring occasionally.
+* Remove spices from heat and allow to cool for around five minutes.
+* Add lemon juice to spice mixture and combine well.
+* Lay salmon on a aluminium-lined baking sheet.
+* Coat the salmon with the spice mixture ensuring that the entire fish is covered.
+* Bake for 15-25 minutes depending on fillet thickness.
+
+=> ../cooking_home.gmi Back to Recipes
+=> ../blog_home.gmi Back to Blog Home
