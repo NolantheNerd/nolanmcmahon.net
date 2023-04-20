@@ -8,6 +8,7 @@ I don't consider myself a sophisticated chef. I have a very limited set of tools
 
 As a note on portion sizes, all of the recipes listed here are designed to make 2-3 meals. I only ever cook for supper, then I save the other meal or two for the next day. This saves me from ever having to buy lunch or scramble to throw something together the next morning before I leave for work.
 
+=> recipes/baked_salmon.gmi Baked Salmon
 => recipes/broccoli_stir_fry.gmi Broccoli Stir-Fry
 => recipes/caesar_salad.gmi Caesar Salad
 => recipes/cheeseburger_salad.gmi Cheeseburger Salad
