@@ -143,7 +143,7 @@ Social media is riddled with problems, to the degree that the discussion of said
 
 This list is far too significant for me to overlook and as a consequence, I've stayed away from most social media over the course of my life. However, I do have a few vestigial social media accounts from which I am in the process of fully separating myself. Specifically, I have:
 
-* A Facebook Account - I opened it at more than a decade ago, before I was wise social media's flaws. I haven't closed it because I haven't yet worked up the gumption to cut off the acquaintances that I've connected with on there.
+* [April 2023 UPDATE: I have now deleted my Facebook Account!] A Facebook Account - I opened it at more than a decade ago, before I was wise social media's flaws. I haven't closed it because I haven't yet worked up the gumption to cut off the acquaintances that I've connected with on there.
 * A Strava Account - I recently opened this one. I decided that I could harness the psychological manipulation of social media to encourage me to exercise. It's worked well, but I've got this account in my sights for deletion, the any-good fallacy notwithstanding.
 * A GitHub Account - Necessary for work. I've removed all my personal stuff from it in part because I'm not interested in giving GitHub Copilot more data to train with.
 
