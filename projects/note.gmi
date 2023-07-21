@@ -25,13 +25,13 @@ note [COMMAND] [ARGS]
 
 ### Commands
 
-- n			Create a brand new note
-- f [string]	Search all notes for [string]
-- d [number]	Delete note [number]
-- v [number]	View note [number]
-- s			Sync all notes with remote
-- e [number]	Edit note [number]
-- l			List notes
+* n			Create a brand new note
+* f [string]	Search all notes for [string]
+* d [number]	Delete note [number]
+* v [number]	View note [number]
+* s			Sync all notes with remote
+* e [number]	Edit note [number]
+* l			List notes
 
 ## Uninstallation
 
