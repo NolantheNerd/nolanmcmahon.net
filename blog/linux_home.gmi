@@ -6,6 +6,14 @@
 
 Microsoft Windows and Apple MacOS are both malware and spyware. They slow down over time, they prevent me from configuring my computer system the way that I want to, and they report back to an uncountably large number of different people all about the activities that are undertaken on them. As such, Linux and BSD are the only viable options for me. Right now I'm rolling with Arch Linux, since it gives me a lot of freedom to build my system from the ground up, they way I want. Below is a list of programs that I use on my computer.
 
+## What I Want from a Computer
+
+1. Consistency - if the software works today, it should continue to work in perpetuity.
+2. Completion - Solid, non-updating software.
+3. Freedom (as in speech not beer) - obviously.
+
+Arch Linux does not support these goals, particularly number two. So I still have more to do when it comes to finding the ideal system for me.
+
 ## Software
 
 ### Arch Linux OS Install

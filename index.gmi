@@ -10,6 +10,7 @@
 
 => ./index.gmi Home
 => blog/blog_home.gmi Blog
+=> gemini://git.nolanmcmahon.net Git Server
 => projects/projects_home.gmi Personal Projects
 
 ## Who am I?
