@@ -16,23 +16,126 @@ Arch Linux does not support these goals, particularly number two. So I still hav
 
 ## Software
 
-### Arch Linux OS Install
+### How I Install Arch Linux
 
 => linux/basic_install.gmi Basic Arch Linux Installation (The Basics)
 => linux/making_arch_usable.gmi Making Arch Linux More Usable (X-Org/yay/man/fonts/autorandr)
 
 ### Programs
 
-=> linux/keyboard_mouse.gmi Keyboard Shortcuts and Hiding the Mouse Cursor (sxhkd/unclutter)
-=> linux/webbrowser.gmi Browsing the Internet (qutebrowser/amfora)
-=> linux/dictionary.gmi Dictionary & Thesaurus (sdcv)
-=> linux/text.gmi Text Editor (vim)
-=> linux/sagemath.gmi Mathematics Software (sagemath)
-=> linux/document_viewer.gmi Document Viewer (zathura)
-=> linux/document_creation.gmi Document Creation (groff)
-=> linux/budgeting.gmi Budgeting Software (ledger)
-=> linux/video.gmi Video Player (mpv/youtube-dl)
-=> linux/image.gmi Image Viewer (sxiv)
-=> linux/utilities.gmi Utilities (btop/rsync/calc)
+What programs have I explicitly installed on my system?
+
+> yay -Qe
+
+=> https://abook.sourceforge.io/ abook - TUI Address Book
+=> https://github.com/makew0rld/amfora amfora - TUI Gemini Browser
+=> https://www.archlinux.org/ base - Minimal Set of Programs for an Arch Linux System
+=> https://www.archlinux.org/ base-devel - Basic Tools to Build Arch Linux Packages
+=> https://ftp.gnu.org/gnu/unifont/ bdf-unifont - Status Bar Font
+=> https://darkhz.github.io/bluetuith/ bluetuith - TUI Bluetooth Manager
+=> http://www.bluez.org/ bluez - Bluetooth Support
+=> http://www.bluez.org/ bluez-utils - Utilities for Bluetooth
+=> https://github.com/Hummer12007/brightnessctl brightnessctl - CLI to Control Device Brightness
+=> https://github.com/baskerville/bspwm bspwm - Tiling Window Manager
+=> https://github.com/aristocratos/btop btop - TUI Resource Monitor
+=> https://github.com/darshanparajuli/calc calc - CLI Calculator
+=> https://tracker.debian.org/pkg/devscripts checkbashisms - Script to Check Shell Scripts for Bashisms
+=> https://cmus.github.io/ cmus - TUI Music Player
+=> https://github.com/cronie-crond/cronie cronie - Crontab Daemon
+=> https://github.com/dosfstools/dosfstools dosfstools - Tool for Creating FAT Filesystems
+=> https://dunst-project.org/ dunst - Notification Daemon
+=> https://github.com/octaviopardo/EBGaramond12 ebgaramond-otf - Garamond Font for Documents
+=> https://github.com/relan/exfat exfat-utils - Tools for Working with FAT Filesystems
+=> https://archlinux.org/packages/extra/x86_64/fbset/ fbset - Tools for Modifying the Framebuffer
+=> https://ffmpeg.org/ ffmpeg - CLI for Video Manipulation
+=> https://www.freedesktop.org/wiki/Software/fontconfig/ fontconfig - Tools for Working with Fonts
+=> https://fontforge.org/en-US/ fontforge - Tools for Editing Fonts
+=> https://github.com/junegunn/fzf fzf - Fuzzy Finder
+=> https://gcc.gnu.org/fortran/ gcc-fortran - GNU Fortran Compiler
+=> https://www.sourceware.org/gdb/ gdb - GNU Debugger
+=> https://git-scm.com/ git - Source Control Management System
+=> https://github.com/dandavison/delta git-delta - Improved Git Pager
+=> https://github.com/charmbracelet/glow glow - TUI Markdown Viewer
+=> https://gitlab.com/tslocum/gmitohtml gmnitohtml - Tool to Convert GMI Files to HTML
+=> http://www.gnuplot.info/ gnuplot - CLI Plotting Utility
+=> https://www.lunabase.org/~faber/Vault/software/grap/ grap - groff Plotting Preprocessor
+=> https://www.gnu.org/software/groff/ groff - Document Creation Tool
+=> https://github.com/randoragon/groffhl groffhl-git - Code Highlighting Tool for groff
+=> https://www.gnu.org/software/grub/ grub - Boot Manager
+=> http://www.andre-simon.de/doku/highlight/highlight.php highlight - Colourizes Text
+=> https://github.com/WindSoilder/hors hors - CLI for Querying Stackoverflow
+=> https://imagemagick.org/ imagemagick - CLI for Image Manipulation
+=> https://isync.sourceforge.io/ isync - Email Downloader
+=> https://github.com/jqlang/jq jq - CLI JSON Parser
+=> https://github.com/linux-test-project/lcov lcov - Code Coverage Report Generator
+=> https://ledger-cli.org/ ledger - CLI Accounting Tool
+=> https://github.com/gokcehan/lf lf - TUI File Manager
+=> https://kernel.org/ linux - Linux Kernel
+=> https://kernel.org/ linux-firmware - Linux Firmware Modules
+=> https://github.com/kristapsdz/lowdown lowdown - Markdown Translator
+=> https://lynx.browser.org/ lynx - TUI Web Browser
+=> https://github.com/naelstrof/maim maim - Screenshot Utility
+=> https://gitlab.com/man-db/man-db man-db - Manual Pager
+=> https://www.kernel.org/doc/man-pages/ man-pages - Linux Manual Pages
+=> https://mpv.io/ mpv - TUI Video Player
+=> https://marlam.de/msmtp/ msmtp - CLI SMTP Client
+=> https://muttwizard.com/ mutt-wizard - Minimal Email System Wizard
+=> https://neomutt.org/ neomutt - TUI Email Client
+=> https://networkmanager.dev/ networkmanager - Internet Access Utility
+=> https://notmuchmail.org/ notmuch - Email Indexer
+=> https://github.com/tuxera/ntfs-3g ntfs-3g - Tools for Working with NTFS Filesystems
+=> https://www.openssh.com/ openssh - Secure Shell
+=> https://www.openssl.org/ openssl - Crytography Tools
+=> https://indestructibletype.com/Jost.html otf-jost - Status Bar Font
+=> https://github.com/cruegge/pam-gnupg pam-gnupg - Tool that Unlocks GPG Keys on Login
+=> https://github.com/cdemoulins/pamixer pamixer - CLI Pulseaudio Mixer
+=> https://www.passwordstore.org/ pass - UNIX Password Manager
+=> https://freedesktop.org/software/pulseaudio/pavucontrol/ pavucontrol - GUI Pulseaudio Volume Controller
+=> https://github.com/polybar/polybar polybar - Status Bar
+=> https://www.freedesktop.org/wiki/Software/PulseAudio/ pulseaudio - Sound Server System
+=> https://www.freedesktop.org/wiki/Software/PulseAudio/ pulseaudio-bluetooth - Bluetooth Module for Pulseaudio
+=> https://github.com/GeorgeFilipkin/pulsemixer pulsemixer - TUI Pulseaudio Mixer
+=> https://www.python.org/ python - Scripting Language
+=> https://github.com/ArniDagur/python-adblock python-adblock - Brave's Adblock Library
+=> https://weasyprint.org/ python-weasyprint - PDF Creation Tool
+=> https://qutebrowser.org/ qutebrowser - GUI Web Browser
+=> https://rsync.samba.org/ rsync - CLI for Incremental File Transfers
+=> https://www.sagemath.org/ sagemath - Computer Algebra System
+=> https://www.sagemath.org/ sagemath-doc - Documentation for Sagemath
+=> https://github.com/andmarti1424/sc-im sc-im - TUI Spreadsheet Tool
+=> https://dushistov.github.io/sdcv/ sdcv - CLI Dictionary/Thesaurus
+=> https://github.com/fauno/siji siji-ttf - A Status Bar Font
+=> https://github.com/baskerville/sxhkd sxhkd - Keybinding Daemon
+=> https://github.com/xyb3rt/sxiv sxiv - TUI Image Viewer
+=> https://github.com/jangler/taffy taffy - CLI Audio Tagger
+=> https://www.bellard.org/tcc/ tcc - Tiny C Compiler
+=> https://geoff.greer.fm/ag/ the_silver_searcher - Tool for Searching Code
+=> https://github.com/tmux/tmux/wiki tmux - Terminal Multiplexer
+=> https://github.com/ryanoasis/nerd-fonts ttf-anonymouspro-nerd - Coding Font
+=> https://dejavu-fonts.github.io/ ttf-dejavu - Document Font
+=> https://github.com/belluzj/fantasque-sans ttf-fantasque-sans-mono - Coding Font
+=> https://typeof.net/Iosevka/ ttf-iosevka - Coding Font
+=> https://aur.archlinux.org/packages/ttf-symbola ttf-symbola - Status Bar Font
+=> https://github.com/ornfelt/ueberzug-latest ueberzug - Tool for Previewing Images on the Commandline
+=> https://github.com/Airblader/unclutter-xfixes unclutter - Utility that Hides the Mouse Cursor
+=> https://github.com/bachoseven/urlview urlview-xdg-git - Tool for Extracting URLs from Text
+=> https://www.vim.org/ vim - Text Editor
+=> https://www.vim.org/ xclip - Clipboard Manager
+=> https://gitlab.freedesktop.org/xorg/app/xcompmgr/ xcompmgr - Compositing Manager
+=> https://github.com/jordansissel/xdotool xdotool - Fake Keyboard/Mouse Input
+=> https://gitlab.freedesktop.org/xorg/driver/xf86-video-intel xf86-video-intel - Intel Graphics Driver
+=> https://www.x.org/wiki/ xorg-server - The Graphical X Server
+=> https://www.x.org/wiki/ xorg-xdpyinfo - Display Information Utility for X
+=> https://www.x.org/wiki/ xorg-xinit - X Server Initialization Tool
+=> https://www.x.org/wiki/ xorg-xrandr - Monitor Management for X
+=> https://www.x.org/wiki/ xorg-xset - User Preference Utility for X
+=> https://www.x.org/wiki/ xorg-xsetroot - Tool to Manage Root Window in X
+=> https://www.x.org/wiki/ xorg-xwininfo - Query Tool for X Windows
+=> https://github.com/stoeckmann/xwallpaper xwallpaper - Wallpaper Setting Utility
+=> https://github.com/Jguer/yay yay - AUR Helper
+=> https://github.com/yt-dlp/yt-dlp yt-dlp - Media Downloader
+=> https://pwmt.org/projects/zathura/ zathura - TUI Document Viewer
+=> https://pwmt.org/projects/zathura-pdf-poppler/ zathura-pdf-poppler - PDF Plugin for Zathura
+=> https://pwmt.org/projects/zathura-ps/ zathura-ps - PostScript Plugin for Zathura
 
 => blog_home.gmi Back to Blog
