@@ -18,14 +18,11 @@ Arch Linux does not support these goals, particularly number two. So I still hav
 
 ### How I Install Arch Linux
 
-=> linux/basic_install.gmi Basic Arch Linux Installation (The Basics)
-=> linux/making_arch_usable.gmi Making Arch Linux More Usable (X-Org/yay/man/fonts/autorandr)
+=> linux/install.gmi Arch Linux Installation
 
 ### Programs
 
 What programs have I explicitly installed on my system?
-
-> yay -Qe
 
 => https://abook.sourceforge.io/ abook - TUI Address Book
 => https://github.com/makew0rld/amfora amfora - TUI Gemini Browser
@@ -36,12 +33,14 @@ What programs have I explicitly installed on my system?
 => http://www.bluez.org/ bluez - Bluetooth Support
 => http://www.bluez.org/ bluez-utils - Utilities for Bluetooth
 => https://github.com/Hummer12007/brightnessctl brightnessctl - CLI to Control Device Brightness
+=> https://github.com/JopStro/bspswallow bspswallow - Window Swallowing for BSPWM
 => https://github.com/baskerville/bspwm bspwm - Tiling Window Manager
 => https://github.com/aristocratos/btop btop - TUI Resource Monitor
 => https://github.com/darshanparajuli/calc calc - CLI Calculator
 => https://tracker.debian.org/pkg/devscripts checkbashisms - Script to Check Shell Scripts for Bashisms
 => https://cmus.github.io/ cmus - TUI Music Player
 => https://github.com/cronie-crond/cronie cronie - Crontab Daemon
+=> https://tools.suckless.org/dmenu/ dmenu - A Menu for Use in X
 => https://github.com/dosfstools/dosfstools dosfstools - Tool for Creating FAT Filesystems
 => https://dunst-project.org/ dunst - Notification Daemon
 => https://github.com/octaviopardo/EBGaramond12 ebgaramond-otf - Garamond Font for Documents
@@ -50,6 +49,7 @@ What programs have I explicitly installed on my system?
 => https://ffmpeg.org/ ffmpeg - CLI for Video Manipulation
 => https://www.freedesktop.org/wiki/Software/fontconfig/ fontconfig - Tools for Working with Fonts
 => https://fontforge.org/en-US/ fontforge - Tools for Editing Fonts
+=> https://fpm.fortran-lang.org/ fpm - Fortran Package Manager Similar to Rust's Cargo
 => https://github.com/junegunn/fzf fzf - Fuzzy Finder
 => https://gcc.gnu.org/fortran/ gcc-fortran - GNU Fortran Compiler
 => https://www.sourceware.org/gdb/ gdb - GNU Debugger
@@ -89,6 +89,7 @@ What programs have I explicitly installed on my system?
 => https://indestructibletype.com/Jost.html otf-jost - Status Bar Font
 => https://github.com/cruegge/pam-gnupg pam-gnupg - Tool that Unlocks GPG Keys on Login
 => https://github.com/cdemoulins/pamixer pamixer - CLI Pulseaudio Mixer
+=> https://github.com/papis/papis papis - Scientific Article Organization Tool
 => https://www.passwordstore.org/ pass - UNIX Password Manager
 => https://freedesktop.org/software/pulseaudio/pavucontrol/ pavucontrol - GUI Pulseaudio Volume Controller
 => https://github.com/polybar/polybar polybar - Status Bar
@@ -104,7 +105,9 @@ What programs have I explicitly installed on my system?
 => https://www.sagemath.org/ sagemath-doc - Documentation for Sagemath
 => https://github.com/andmarti1424/sc-im sc-im - TUI Spreadsheet Tool
 => https://dushistov.github.io/sdcv/ sdcv - CLI Dictionary/Thesaurus
+=> https://tools.suckless.org/sent/ sent - Simple Plaintext Presentation Tool
 => https://github.com/fauno/siji siji-ttf - A Status Bar Font
+=> https://st.suckless.org/ st - Simple Terminal
 => https://github.com/baskerville/sxhkd sxhkd - Keybinding Daemon
 => https://github.com/xyb3rt/sxiv sxiv - TUI Image Viewer
 => https://github.com/jangler/taffy taffy - CLI Audio Tagger

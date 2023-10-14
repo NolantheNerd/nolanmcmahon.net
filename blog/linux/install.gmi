@@ -5,7 +5,7 @@
 => ../blog_home.gmi Back to Blog
 => ../linux_home.gmi Back to the Software I Use
 
-Arch Linux is an OS which you need to install yourself. I've installed it several times on several different machines. This is the instruction guide that I follow. After following this, you should be able to boot and be greeted by a flashing cursor!
+Arch Linux is an OS which you need to install yourself. I've installed it several times on several different machines. This is the instruction guide that I follow.
 
 ## Installation
 
@@ -193,6 +193,31 @@ Make it one word at the top of this new file.
 > reboot
 
 You should now be prompted to login. You can do so with the username root and the password that you set before. Congratulations!
+
+## Extras
+
+These are a couple of extra steps that I typically use to make my system a bit more usable.
+
+1. Connect to the internet with Network Manager:
+
+> nmcli radio all on
+> nmtui
+
+2. Add a user account and give them SUDO privileges (without requiring a password).
+
+> useradd -m -g wheel (username)
+> passwd (username)
+> sudo vim /etc/sudoers
+
+Uncomment the line:
+
+> %wheel ALL=(ALL) NOPASSWD: ALL
+
+near the bottom of the file.
+
+3. Enable colour and a pacman animation for pacman by adding the line "ILoveCandy" and uncommenting the line "Color" in /etc/pacman.conf.
+
+4. From here I typically install the list of programs that I typically use, starting with an AUR manager and restore my /home directory from a backup, but you can also proceed by installing a desktop environment. It's up to you from this point on!
 
 => ../linux_home.gmi Back to the Software I Use
 => ../blog_home.gmi Back to Blog
