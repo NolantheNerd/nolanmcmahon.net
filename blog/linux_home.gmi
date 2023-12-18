@@ -4,15 +4,16 @@
 
 => ./blog_home.gmi Back to Blog
 
-Microsoft Windows and Apple MacOS are both malware and spyware. They slow down over time, they prevent me from configuring my computer system the way that I want to, and they report back to an uncountably large number of different people all about the activities that are undertaken on them. As such, Linux and BSD are the only viable options for me. Right now I'm rolling with Arch Linux, since it gives me a lot of freedom to build my system from the ground up, they way I want. Below is a list of programs that I use on my computer.
+Microsoft Windows and Apple MacOS are both malware and spyware. They slow down over time, they prevent me from configuring my computer system the way that I want to, and they report back to an uncountably large number of different people all about the activities that are undertaken on them. As such, Linux and BSD are the only viable options for me. Right now I'm rolling with Debian, since it gives me a lot of freedom to build my system from the ground up, they way I want. Below is a list of programs that I use on my computer.
 
 ## What I Want from a Computer
 
 1. Consistency - if the software works today, it should continue to work in perpetuity.
 2. Completion - Solid, non-updating software.
 3. Freedom (as in speech not beer) - obviously.
+4. Proper Software Packaging - use APT/PACMAN/AUR or offer to let me compile from source. None of this Snap/Flatpak/AppImage/Docker nonsense.
 
-Arch Linux does not support these goals, particularly number two. So I still have more to do when it comes to finding the ideal system for me.
+I used Arch Linux for a few years and got quite a bit of mileage out of it. But ultimately, it was irritating to have to update so very often. After years of lost time spent updating Arch Linux, I switched to Debian 12. Honestly, I feel like this has been a fantastic switch. APT has the vast majority of the software packages that I use built in, and I am not at all afraid of installing the outstanding pieces of software from source. Plus updates are small and rare. Perfect!
 
 ## Software
 
