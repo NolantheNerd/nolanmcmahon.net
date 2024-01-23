@@ -13,6 +13,7 @@ As a note on portion sizes, all of the recipes listed here are designed to make 
 => recipes/caesar_salad.gmi Caesar Salad
 => recipes/cheeseburger_salad.gmi Cheeseburger Salad
 => recipes/cheesy_macaroni.gmi Cheesy Macaroni
+=> recipes/chick_fila_sauce.gmi Chick Fila Sauce
 => recipes/chicken_strips.gmi Chicken Strips
 => recipes/chicken_taco_salad.gmi Chicken Taco Salad
 => recipes/egg_salad_sandwiches.gmi Egg Salad Sandwiches
