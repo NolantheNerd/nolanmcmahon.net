@@ -258,6 +258,37 @@ All of this just seems to me to be a toxic combination for body, mind, and soul.
 
 ## Subscribe to Television/Movie/Music Streaming Services
 
+I have an unusual relationship with streaming services, that is, sites like:
+
+* Spotify
+* Apple Music
+* Soundcloud
+* Netflix
+* HBO Max
+* Disney+
+
+I feel as though I were trapped between a rock and a hard place when trying to engage with these services. There are essentially two different opinions about how to use services like these, both of which I strongly disagree with, and thus I am left at times to go without.
+
+The first group of people that use these services represent the societal norm. They pay the steaming service a monthly fee in exchange for streaming permission of the media. I object to this for two reasons: first, this business model denies ownership and control of the media. You don't own the song you are listening to, you are only renting it, and as such, you don't have permission to store it locally, play it with your music player of choice, back it up, etc. Second, these services are not only making money from your subscription payments, they also collect your data and sell it to advertisers, governments, and others. This is morally reprehensible and I have no interest in giving over any of my data in that way.
+
+The second group of people that use these services are nerds. Techy nerds at that. They use software to download the content that these services provide to their local machines to view when and how they'd like. The problem is that they completely ignore the theft that they are doing. In fact, many of them go so far as to make the ludicrous argument that copying media is not theft at all. The argument usually goes something like this: "Copying a song or movie does not deprive the original author of his copy of the work, therefore copying is not theft. The only reason society calls the copying of intellectual property 'theft' is because of a legal construct called copyright which prevents the distribution of an otherwise non-scarce resource." This argument is completely blind to the truth. If intellectual property were not scarce, that would mean that there would be an infinite supply of it. But there isn't. Sure, once something exists it is no longer scarce, but before it exists it is scarce. Payment is there to encourage people to create more intellectual property, even if existing intellectual property is not scarce. All that to say, I am not convinced by the moral nihilism that "copying isn't stealing".
+
+This leaves me in a real pickle. I don't want to subscribe to these services and be abused by them, nor do I want to steal from those who have created great art. This leads me to my preferred method of media consumption: purchase. I prefer to outright purchase the media I am going to consume. I know, sounds terribly old school right? This is why my music provider of choice is Bandcamp. Bandcamp lets you purchase the music you like from the artist and download it in any format you'd like. PERFECT. A true transaction: I give the artist money, he gives me his music for me to do with as I please. No tracking, no walled gardens, no persistent internet connection required, no theft. Second best is to buy the artist's CD, if he makes one. When I get the CD, I can rip it and do what I wish with the music. This is very expensive, but morally clean.
+
+Unfortunately there are artists out there that don't offer their music on Bandcamp, as a paid download, or as a CD. What then? That's a tricky one. Generally I just accept that I can't listen to it. It's unfortunate, but its the only moral high ground available.
+
+=> Bandcamp https://www.bandcamp.com
+
+### Objections
+
+* Why don't you just pay for a streaming service and then download the music that you like? Isn't that just like a paid download?
+
+Oh how I wish that were true! Unfortunately, streaming services like Spotify pay the artists who host on their platform based on the number of "plays" that they get each month. More plays means more money. If I download the song, that counts as a single play, regardless of the number of times that I listen to it offline in the future. This is only marginally better than outright theft.
+
+* Who cares? Artists have come to expect to make very little on streaming services. People just won't pay for music anymore. Why fight this losing battle?
+
+I belive in standing up for my principles, es
+
 ## Go to Movie Theatres
 
 I've always disliked movie theatres. I still vividly remember my first experience. My parents took me to see (2003) "Piglet's Big Movie". I was five at the time. I recall going into the theatre and hearing lots of other young children talking with their parents. We went and sat near the back of the theatre. It was strange how the whole room sloped downward towards the screen. It felt almost like if you leaned forward, you might fall down to the front of the room. Then, the movie started.

@@ -1,0 +1,79 @@
+=> ../index.gmi Home
+
+# Does Privacy Matter?
+
+=> ./blog_home.gmi Back to Blog
+
+## Background
+
+[PERSONAL BACKGROUND - Didn't think much about privacy until I started my job.]
+
+{ Privacy is common in culture. Many different opinions. Shrugging shoulders. Impact how we live - hard. Convenience above all. Hedonism. My initial take. }
+
+Privacy has become a popular buzzword in our culture today. Questions surrounding the value of privacy and whether or not it ought to be considered fundamental to all people permeate our public discourse. Two schools of thought seem to have emerged surrounding the "problem" of privacy. One claims that protecting what is left of it is of the upmost importance while the other insists that it is already dead and that we may as well take full advantage of what a life without it can yield. Despite these fundamentally divergent opinions, both sides agree that individual privacy has declined rapidly as a consequence of the widespread nature of the internet.
+
+The internet is incredibly pervasive. Our global societies have become unbelievably reliant on the internet in order to facilitate each and every aspect of modern life. Consider how far reaching it is. Everything from transactional finance and governance to recreation and education are now inseparable from the internet in a practical sense. And yet, trying to stay private on the internet is akin to carrying water with a sieve. There is leakage all over the place.
+
+Ultimately, we have chosen to sacrifice our privacy because of the conveniences those sacrifices give us. Storing our files in the cloud allows us to access them everywhere. Making purchases with a credit card eliminates the need to frequent the bank to withdraw cash. Subscribing to a streaming service grants endless entertainment without the need to ever leave the couch. Online shopping is faster and cheaper than making a trek to the mall. Ordering delivery foregoes the trip to the restaurant. Reclaiming our privacy, then, is a matter of sacrifice. The more private we wish to become, the fewer luxury conveniences we are able to partake in. It's a give and take, a balance, or a continuum. However, going private is certainly bucking the trend. There are many who are willing to dispense with privacy altogether if they can get even a marginal increase in convenience. But there are seemingly few who are prepared to do the reverse.
+
+Is it even worth it? Does privacy actually matter?
+
+I can honestly say that for the first two decades of my life, I didn't have any strong opinions at all about privacy. Sure, I liked the idea, same as most. Privacy seemed like an intrinsic good. But I wasn't that concerned about it. The claims that were made by Snowden and the like seemed both fantastical and scary, but were not motivating enough to cause me to actually change my behaviour. But my opinions changed strongly when I started working once I got my first post-university job at a marketing-technology company.
+
+## Opening my Eyes
+
+[DISCOVERIES AT WORK - Location Targeting, Search History, Device Information, Rainbarrel]
+
+{ Advertising's goals. What can be tracked. How it is used. Attitudes towards content. The lie of relevant ads. Why I think advertising is harmful. }
+
+When I took the job as a machine learning specialist at a marketing company, I didn't think twice about the ethics of the industry or it's impact on privacy. As far as I knew, as a Physics STEM graduate, marketing was one of those activities that businesses had always been engaged in and never had an impact on me personally. However, once I started working in that environment, I realized that I was wrong on both counts.
+
+As it turns out, businesses are not always prioritizing a purchase from you. While a large chunk of the marketing that you see is targeting your wallet, another sizable chunk is focused on your mind. This stems from a business' need to play the long term survival game. It's not enough just to get money from you today. They need you to be willing to hand over your money again tomorrow, and the day after that. There's no sustainable way to do that if you don't like them or don't remember them. Pervasiveness is key. Do you know what's better than a satisfied customer that continues to come back day after day? One which brings his friends with him when he returns. A walking, talking, testifying billboard. That's what every business dreams that you'll do for them.
+
+Take a company like McDonalds for example. At some points, they are sending out coupons and advertising their newest fried creation. But at other times, they play up the familiarity and friendliness of their brand by showing an ad with a kid who can barely see over the counter ordering a Happy Meal who pays with some Cheerios and the lint from his pocket. The female cashier smiles sympathetically at him and gives him his meal, watching him bite happily into his chicken nugget. Why? To pull at your heart strings. To make you feel, even if only subconsciously, that McDonalds really cares and is a good company. That what keeps them in good standing with you and brings you back time after time.
+
+Now I know what you're thinking: "Poppycock! Ads don't work on me! I never even pay attention to them!" Well, maybe that's true for you, but let me assure you of this: I've seen the reports, companies make billions of dollars through advertising. If it didn't work on anyone, there would be no sense it paying for the advertising in the first place! So even if it somehow doesn't work on you, which I wouldn't be too sure of, it certainly works on a lot of other people.
+
+That's all well and good, but what does advertising have to do with privacy? Great question. Companies have always desired to show their ads to people who are most likely to be positively influenced by their content. After all, what good is it to show an ad for milk to someone who is lactose intolerant! This is the desire to create more relevant ads. Since the advent of the internet and digital advertisements, an arms race has begun to collect as much data as possible about the individuals who see the ads. The more that a company knows about you, the more likely they are to be able to determine whether you'll respond well to their ad or not.
+
+For quite a while now, this has taken the form of so called retargeting. Have you ever purchased something online only to be incessantly nagged with ads from the same retailer or even the very product that you already purchased? Congratulations! You have been victimized by digital retargeting! From the advertiser's perspective, you're a really safe bet. You already liked them enough to purchase from them. In that sense, they've already won you over! All they need to do is remind you that they still exist in case you have a few more dollars in your wallet that you wouldn't mind parting with. Retargeting can be quite irritating when the product you bought was a pair of shoes and you obviously have no need to buy an identical pair of shoes again right away, but when the item you purchased is more perishable or more readily used up, these kinds of ads can be seen as welcome reminders to restock before your supply runs too low.
+
+Retargeting is accomplished through something called a third-party cookie - the same cookie that every website on the internet asks you a million times to accept from them. In short, cookies are small files that the website saves on your computer and that can be read by the website that initially saved it whenever you return to their webpage. Cookies are how websites remember your username and password, or whether you prefer a light or dark theme. But they can also be planted by advertisers as a means to track you as you move about on the web. Advertising cookies are often (but not always) third-party cookies meaning that they are planted by a website that you are not directly visiting. For example, if you are reading the recipe site SweetTaste.com and Google places an ad on that site, both SweetTaste and Google can place cookies on your system.
+
+This is where networking effects come into play. The more sites that Google and other advertising networks can place their ads on the internet, the more places they can watch you go to. That's how they get you. This networking effect leads to a division of labour on the back end of the digital advertising market. The marketplace is divided into buyers and sellers, just like any other market, but the product that is being sold is a slot on a webpage or in front of a video for an ad and an associated profile of a person. Platforms like Google, Facebook, and Spotify sell advertising slots and user profiles to advertising agencies (who represent their end client companies) who set up automated bidding strategies based on factors like budget, time of day, target audience, advertising slot type, and many many more.
+
+In order to increase the relevance of the advertisements, both ad sellers and buyers want to build more accurate profiles on the people that they are targeting. Sellers because they can then provide higher resolution descriptions of their advertising inventory and buyers because they can then develop more specific target profiles to accompany their advertising strategy.
+
+So, what kind of information is collected? Anything you can imagine. For instance, cell phone data typically includes:
+
+* Device Identifier (A id number that uniquely identifies your phone.)
+* Phone Carrier 
+* Phone Brand (Apple/Android but also Samsung/Google/OnePlus/etc.)
+* IP Address
+* Exact Time that a Significant Event (like a notification) Occurred
+* Longitude and Latitude of the Device when the Significant Event Occurred (down to a few meters accuracy.)
+* Altitude of the Device when the Significant Event Occurred
+
+This level of collection is generally referred to as "anonymized", meaning that the companies who collect this information are satisfied that there is not enough information available to trace anything back to an individual person. (You may disagree, and you should, but this is already much better than it has been in the past.) This is what companies mean when they promise you that they care about your privacy. If McDonalds collects significant events from your device every time you get a notification from the McDonalds app on your phone and McDonalds sells the information above about you to some data collection agency, they consider that a "protection" of your privacy. It's not like they gave out your name, or your credit card number, or your phone number!
+
+{ My Job is to: }
+
+## Conflicting Opinions
+
+[DIFFERENT TAKES ON PRIVACY - Nothing to Hide, Inevitability, Embrace, Systemic vs Individual]
+
+{ Nothing to hide, nothing to fear - until things change. Can't be avoided, so why bother. In fact, embrace the "benefits". Make a statement against a systemic problem. }
+
+## My Conclusion
+
+[SHOWER THOUGHTS - Making god in our own image]
+
+{ God knows all - man is remaking that in his own image. Not consistent, not good, not loving/caring. Why avoid? Give the devil less to work with. Less effective for all. ? }
+
+## Summary
+
+[WHY PRIVACY MATTERS TO ME]
+
+{ One or two sentence wrapper that clinches it. }
+
+=> ./blog_home.gmi Back to Blog
