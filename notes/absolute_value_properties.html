@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+	<title></title>
+	<script id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	<style>
+	body {
+		max-width: 80%;
+		padding-left: 20%;
+		padding-right: 20%;
+		font-family: sans-serif;
+	}
+	ul {
+		list-style-type: circle;
+	}
+	blockquote {
+		border-left: 1mm solid navy;
+		padding-left: 2mm;
+	}
+	</style>
+</head>
+<body>
+	<h6><a href="../index.html">Home</a> / <a href="../notes.html">All Notes</a></h6>
+	<h2>\(|x|\) Properties</h2>
+	<p>The absolute value function: \[|x|=\begin{cases}x&x\geq0\\-x&x\leq0\end{cases}\]</p>
+	<blockquote>
+	<p>Absolute value properties:</p>
+	<ul>
+		<li>\(|a|=|-a|\)</li>
+		<li>\(|ab|=|a||b|\)</li>
+		<li>\(|a\pm b|\leq|a|+|b|\) (The <b>triangle inequality</b>)</li>
+	</ul>
+	</blockquote>
+	<h4>Proof for \(|ab|=|a||b|\): </h4>
+	<p>Consider \(|ab|=|a||b|\). There are four possible states: \((a,b<0);(a<0,b>0);(a>0,b<0);(a,b>0)\).</p>
+	<p>If \(a,b<0\): \(ab>0\implies|ab|=ab\). Also \(|a|=-a\) and \(|b|=-b\) thus \(|a||b|=(-a)(-b)=ab\).</p>
+	<p>If \(a<0,b>0\): \(ab<0\implies|ab|=-ab\). Then \(|a|=-a\) and \(|b|=b\) thus \(|a||b|=-ab\).</p>
+	<p>If \(a>0,b<0\): \(ab<0\implies|ab|=-ab\). Then \(|a|=a\) and \(|b|=-b\) thus \(|a||b|=-ab\).</p>
+	<p>If \(a,b>0\): \(ab>0\implies|ab|=ab\). Also \(|a|=a\) and \(|b|=b\) thus \(|a||b|=ab\).</p>
+	<p><b>QED</b></p>
+</body>
